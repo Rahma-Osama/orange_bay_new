@@ -5,7 +5,7 @@ class Programs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: MediaQuery.of(context).size.height*.4,child: ListView.builder(itemCount:3,itemBuilder: (context,index)=>ProgramContainer(),scrollDirection: Axis.horizontal,));
+    return SizedBox(height: MediaQuery.of(context).size.height*.37,child: ListView.builder(itemCount:3,itemBuilder: (context,index)=>ProgramContainer(),scrollDirection: Axis.horizontal,));
   }
 
 }
