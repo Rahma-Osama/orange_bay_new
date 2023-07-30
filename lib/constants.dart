@@ -4,3 +4,5 @@ Color MAIN_ORANGE =Color(0XFFE07026);
 Color BLACK =Color(0XFF1F1F1F);
 Color GREY =Color(0XFF969696);
 
+List<String> programDetails=["Overview","Programs","Reviews"];
+List<bool> programDetailsIsSelected=[true,false,false];
