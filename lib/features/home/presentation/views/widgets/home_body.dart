@@ -10,37 +10,39 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            PickDate(),
-            Search(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("Top Programs in Orange Bay",style: Styles.TextStyle14,),
-                ),
-                GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
-              ],
-            ),
-            Programs(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("Today Activities",style: Styles.TextStyle14,),
-                ),
-                GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
-              ],
-            ),
-            Activities()
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: Column(
+            children: [
+              PickDate(),
+              Search(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    child: Text("Top Programs in Orange Bay",style: Styles.TextStyle14,),
+                  ),
+                  GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
+                ],
+              ),
+              Programs(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text("Today Activities",style: Styles.TextStyle14,),
+                  ),
+                  GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
+                ],
+              ),
+              Activities()
 
-          ],
+            ],
+          ),
         ),
       ),
     );

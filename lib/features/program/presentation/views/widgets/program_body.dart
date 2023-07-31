@@ -5,6 +5,7 @@ import 'package:orange_bay_new/features/program/presentation/views/widgets/revie
 import '../../../../../constants.dart';
 import '../../../../../core/shred_widgets/app_bar2.dart';
 import '../../../../../core/shred_widgets/back_ground.dart';
+import '../../../../../core/shred_widgets/custom_button.dart';
 import '../../../../../core/shred_widgets/images.dart';
 import '../../../../../core/utilities/styles.dart';
 import 'overview.dart';
@@ -100,6 +101,18 @@ class _ProBodyState extends State<ProBody> {
               : programDetailsIsSelected[1]
               ? ProgramsDetails()
               : Reviews(),
+          Padding(
+            padding: const EdgeInsets.all(8),
+            child: CustomButton(
+              backgroundColor: MAIN_ORANGE,
+              text: 'Book Now',
+              func: (){
+                // Navigator.push(context, MaterialPageRoute(builder: (context,index)=>LoginView()));
+              },
+              width:double.infinity,
+            ),
+          ),
+
         ],
       ),
     );

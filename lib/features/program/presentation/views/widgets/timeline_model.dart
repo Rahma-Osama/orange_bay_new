@@ -5,6 +5,7 @@ import '../../../../../constants.dart';
 import '../../../../../core/utilities/styles.dart';
 customTimelineModel({required time,required event}){
   return TimelineModel(Row(
+
       children: [
       Text(time,style: Styles.TextStyle14,),
       Text(event,style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400),)
@@ -12,5 +13,5 @@ customTimelineModel({required time,required event}){
   ),
       position: TimelineItemPosition.random,
       iconBackground: Colors.white,
-      icon: Icon(Icons.circle_outlined,color: MAIN_ORANGE,));
+      icon: Icon(Icons.trip_origin,color: MAIN_ORANGE,));
 }

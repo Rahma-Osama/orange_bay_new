@@ -23,26 +23,22 @@ class _BottomNavBarState extends State<BottomNavBar> {
       print(_currentIndex);
       }),
       items: [
-        /// Home
         SalomonBottomBarItem(
           icon: Icon(Icons.home),
           title: Text("Home"),
           selectedColor: MAIN_ORANGE,
         ),
 
-        /// Likes
         SalomonBottomBarItem(
           icon: Icon(Icons.calendar_today_rounded),
           title: Text("Calendar"),
           selectedColor: MAIN_ORANGE,        ),
 
-        /// Search
         SalomonBottomBarItem(
-          icon: Icon(Icons.favorite_border_rounded),
-          title: Text("Favorites"),
+          icon: Icon(Icons.fact_check_outlined),
+          title: Text("Services"),
           selectedColor: MAIN_ORANGE,        ),
 
-        /// Profile
         SalomonBottomBarItem(
           icon: Icon(Icons.more_horiz),
           title: Text("Info"),

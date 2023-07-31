@@ -14,7 +14,7 @@ class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return CustomButton(
-      width: MediaQuery.of(context).size.width*.48,
+      width: double.infinity,
       backgroundColor: MAIN_ORANGE,
       text: 'Search',
       // isChecked: _isChecked,

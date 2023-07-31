@@ -6,7 +6,7 @@ import '../utilities/assets.dart';
 
  CustomAppBar({context}){
   return AppBar(
-    backgroundColor: Colors.transparent,
+    backgroundColor: Colors.grey[100],
     elevation: 0,
     title: Padding(
       padding: const EdgeInsets.only(top: 8.0),
@@ -17,24 +17,38 @@ import '../utilities/assets.dart';
     ),
     actions: [
       Padding(
-        padding: const EdgeInsets.only(top: 4.0),
+        padding: const EdgeInsets.all( 8.0),
         child: Container(
-            child: CustomDropdownButton()
+            padding:EdgeInsets.all(MediaQuery.of(context).size.width/60),
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/50)
+            ),
+            child: Row(
+              children: [
+                Icon(Icons.language,color: MAIN_ORANGE,),
+                SizedBox(width: 4,),
+                CustomDropdownButton()
+              ],
+            )
         ),
       ),
-      Container(
-        decoration: BoxDecoration(
-            color: Colors.white,
-        borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/40)
-        ),
-        padding:EdgeInsets.all(MediaQuery.of(context).size.width/20),
-        alignment: Alignment.center,
-        child: Stack(
-          children: [
-            Align(alignment: Alignment.center,child: Icon(Icons.notifications_none_outlined,color: BLACK,)),
-            Positioned(top:MediaQuery.of(context).size.height/50,right:MediaQuery.of(context).size.width/200,child: CircleAvatar(backgroundColor: Color(0XFFFF4747),radius: MediaQuery.of(context).size.height/200,)),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Container(
+          decoration: BoxDecoration(
+              color: Colors.white,
+          borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/50)
+          ),
+          padding:EdgeInsets.all(MediaQuery.of(context).size.width/60),
+          alignment: Alignment.center,
+          child: Stack(
+            children: [
+              Align(alignment: Alignment.center,child: Icon(Icons.notifications_none_outlined,color: BLACK,)),
+              Positioned(top:MediaQuery.of(context).size.height/50,right:MediaQuery.of(context).size.width/200,child: CircleAvatar(backgroundColor: Color(0XFFFF4747),radius: MediaQuery.of(context).size.height/200,)),
 
-          ],
+            ],
+          ),
         ),
       )
     ],

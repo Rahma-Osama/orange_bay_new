@@ -6,6 +6,7 @@ import 'package:orange_bay_new/features/program/presentation/views/widgets/overC
 import 'package:orange_bay_new/features/program/presentation/views/widgets/second_container.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/summary-container.dart';
 
+import '../../../../auth/presentation/views/login_view.dart';
 import 'animation.dart';
 class Overview extends StatelessWidget {
   const Overview({Key? key}) : super(key: key);
@@ -18,15 +19,6 @@ class Overview extends StatelessWidget {
           FirstContainer(),
           SecondContainer(),
           SummaryContainer(),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: CustomButton(
-                backgroundColor: MAIN_ORANGE,
-                text: 'Book Now',
-                func: (){},
-                width: MediaQuery.of(context).size.width*.48,
-            ),
-          ),
         ],
       ),
     );

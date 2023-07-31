@@ -27,8 +27,8 @@ class ProgramsDetails extends StatelessWidget {
       child: Container(
         color: Colors.white,
         alignment: Alignment.center,
-        height: MediaQuery.of(context).size.height*.4,
-        child: Timeline(children: items, position: TimelinePosition.Left,lineColor: MAIN_ORANGE,),
+        height: MediaQuery.of(context).size.height*.3,
+        child: Timeline(lineWidth:2,children: items, position: TimelinePosition.Left,lineColor: MAIN_ORANGE,),
       ),
     );
   }

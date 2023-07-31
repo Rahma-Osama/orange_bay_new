@@ -76,7 +76,7 @@ class _AppBarButtomState extends State<AppBarButtom> {
                   ),
                   child: IconButton(
                     icon: const Icon(
-                      Icons.favorite,
+                      Icons.favorite_border_rounded,
                       size: 20,
                       color: Colors.black,
                       weight: 100.0,
