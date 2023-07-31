@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
@@ -10,7 +12,6 @@ class ProgramsDetails extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal:6,vertical: MediaQuery.of(context).size.height/40),
       child: Container(
-
         color: Colors.white,
         alignment: Alignment.center,
         height: MediaQuery.of(context).size.height*.4,
