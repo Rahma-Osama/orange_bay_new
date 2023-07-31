@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
-import 'package:orange_bay_new/features/program/presentation/views/widgets/all.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/overview.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/program_body.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/programs.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/reviews.dart';
 
 import '../../../../constants.dart';
-import '../../../../core/shred_widgets/app_bar2.dart';
-import '../../../../core/shred_widgets/back_ground.dart';
-import '../../../../core/shred_widgets/images.dart';
-
 class ProgramLayout extends StatefulWidget {
   const ProgramLayout({Key? key}) : super(key: key);
 
