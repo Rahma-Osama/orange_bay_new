@@ -40,6 +40,8 @@ dependencies:
   syncfusion_flutter_datepicker:
   timelines: ^0.1.0
   animated_text_kit:
+  timeline_list: ^0.0.6
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
