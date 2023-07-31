@@ -7,9 +7,12 @@ class SummaryContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal:20,vertical: MediaQuery.of(context).size.height/40),
+      padding: EdgeInsets.symmetric(
+          horizontal:20,
+          vertical: MediaQuery.of(context).size.height/50
+      ),
       child: Container(
-        height: MediaQuery.of(context).size.height *.15,
+        height: MediaQuery.of(context).size.height *.25,
         padding: const EdgeInsets.all(16),
         clipBehavior: Clip.antiAlias,
         decoration: ShapeDecoration(

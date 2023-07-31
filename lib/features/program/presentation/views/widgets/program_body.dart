@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/features/program/presentation/views/book_view.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/programs.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/reviews.dart';
 
@@ -107,7 +108,7 @@ class _ProBodyState extends State<ProBody> {
               backgroundColor: MAIN_ORANGE,
               text: 'Book Now',
               func: (){
-                // Navigator.push(context, MaterialPageRoute(builder: (context,index)=>LoginView()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> BookView()));
               },
               width:double.infinity,
             ),
