@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/activities_list.dart';
+import 'package:orange_bay_new/features/home/presentation/views/widgets/pick_date.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/programs_lists.dart';
+import 'package:orange_bay_new/features/home/presentation/views/widgets/search_buttom.dart';
 class HomeBody extends StatelessWidget {
   const HomeBody({Key? key}) : super(key: key);
 
@@ -13,6 +15,8 @@ class HomeBody extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
+            PickDate(),
+            Search(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -68,7 +68,6 @@ class _ProgramLayoutState extends State<ProgramLayout> {
               ),
               programDetailsIsSelected[0]?Overview(): programDetailsIsSelected[1]?ProgramsDetails() : Reviews(),
 
-
             ],
           ),
         ),
