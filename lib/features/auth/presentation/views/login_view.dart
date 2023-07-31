@@ -18,9 +18,11 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      appBar: CustomAppBar(),
-      body: LogInBody(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: CustomAppBar(context: context) ,
+        body: LogInBody(),
+      ),
     );
   }
 }

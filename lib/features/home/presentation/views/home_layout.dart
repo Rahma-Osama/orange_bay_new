@@ -13,19 +13,21 @@ class HomeLayout extends StatefulWidget {
 class _HomeLayoutState extends State<HomeLayout> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.grey[100],
-      appBar: CustomAppBar(context: context) ,
-      bottomNavigationBar:Container(
-        clipBehavior: Clip.antiAliasWithSaveLayer,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/40)
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        appBar: CustomAppBar(context: context) ,
+        bottomNavigationBar:Container(
+          clipBehavior: Clip.antiAliasWithSaveLayer,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/40)
 
-    ),
-        margin:  EdgeInsets.all(MediaQuery.of(context).size.width/20),
-        child: BottomNavBar(),
-      ) ,
-      body: HomeBody(),
+      ),
+          margin:  EdgeInsets.all(MediaQuery.of(context).size.width/20),
+          child: BottomNavBar(),
+        ) ,
+        body: HomeBody(),
+      ),
     );
   }
 }

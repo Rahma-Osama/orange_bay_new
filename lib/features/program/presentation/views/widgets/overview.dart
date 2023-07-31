@@ -18,11 +18,14 @@ class Overview extends StatelessWidget {
           FirstContainer(),
           SecondContainer(),
           SummaryContainer(),
-          CustomButton(
-              backgroundColor: MAIN_ORANGE,
-              text: 'Book Now',
-              func: (){},
-              width: MediaQuery.of(context).size.width*.48,
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: CustomButton(
+                backgroundColor: MAIN_ORANGE,
+                text: 'Book Now',
+                func: (){},
+                width: MediaQuery.of(context).size.width*.48,
+            ),
           ),
         ],
       ),
