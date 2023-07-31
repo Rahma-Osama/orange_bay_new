@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   salomon_bottom_bar: ^3.3.2
   bloc: ^8.1.2
+  syncfusion_flutter_datepicker:
   timelines: ^0.1.0
 
 dev_dependencies:

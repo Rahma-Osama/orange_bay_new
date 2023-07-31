@@ -73,6 +73,11 @@ class _ProgramLayoutState extends State<ProgramLayout> {
             ],
           ),
         ),
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.grey[100],
+        // appBar: AppBarButtom(),
+        body: ProBody(),
       ),
     );
   }
