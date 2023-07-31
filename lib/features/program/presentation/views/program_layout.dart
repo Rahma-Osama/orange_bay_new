@@ -22,8 +22,9 @@ class _ProgramLayoutState extends State<ProgramLayout> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Container(height: MediaQuery.of(context).size.height/3),
+              Container(height: MediaQuery.of(context).size.height/3,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
