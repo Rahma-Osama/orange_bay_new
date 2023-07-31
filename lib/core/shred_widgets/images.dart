@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'list_images.dart';
+
 class SliderImg extends StatelessWidget {
   const SliderImg({Key? key}) : super(key: key);
 
@@ -17,8 +19,14 @@ class SliderImg extends StatelessWidget {
             color: Colors.white,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           ),
+          child: Stack(
+            children: [
+              ListImages(),
+            ],
+          ),
         ),
       ),
+
     );
   }
 }

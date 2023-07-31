@@ -9,4 +9,11 @@ class Styles {
   static TextStyle TextStyle16 = TextStyle(color: MAIN_ORANGE, fontSize: 16 ,fontWeight: FontWeight.w400,fontFamily: 'Montserrat',);
   static TextStyle TextStyle18 =
       TextStyle(color: BLACK, fontSize: 18, fontWeight: FontWeight.w600);
+  static TextStyle TextStyle20 = TextStyle(
+    color: Colors.white,
+    fontSize: 20,
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+    height: 1,
+  );
 }
