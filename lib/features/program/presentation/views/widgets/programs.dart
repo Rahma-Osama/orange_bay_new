@@ -22,13 +22,15 @@ class ProgramsDetails extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal:6,vertical: MediaQuery.of(context).size.height/40),
-      child: Container(
-        color: Colors.white,
-        alignment: Alignment.center,
-        height: MediaQuery.of(context).size.height*.3,
-        child: Timeline(lineWidth:2,children: items, position: TimelinePosition.Left,lineColor: MAIN_ORANGE,),
+    return SingleChildScrollView(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal:6,vertical: MediaQuery.of(context).size.height/40),
+        child: Container(
+          color: Colors.white,
+          alignment: Alignment.center,
+          // height: MediaQuery.of(context).size.height*.4,
+          child: Timeline(lineWidth:2,children: items, position: TimelinePosition.Left,lineColor: MAIN_ORANGE,physics: NeverScrollableScrollPhysics(),shrinkWrap: true,),
+        ),
       ),
     );
   }
