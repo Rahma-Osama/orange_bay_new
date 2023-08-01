@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="orange_bay_new"
+        android:label="Orange Bay"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
