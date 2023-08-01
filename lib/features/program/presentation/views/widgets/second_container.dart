@@ -72,6 +72,7 @@ class _SecondContainerState extends State<SecondContainer> {
               style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w600),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   'Boat (250 EGP)',
@@ -106,7 +107,7 @@ class _SecondContainerState extends State<SecondContainer> {
                  setState(() => count--
                  ),
              mini: true,
-             child: const Icon(Icons.remove),
+             child: const Icon(Icons.remove , size: 10,),
            ),
            const SizedBox(width: 10.0),
            Text(
