@@ -11,10 +11,17 @@ class _StepperScreenState extends State<StepperScreen> {
   int currentstep = 0;
   @override
   Widget build(BuildContext context) {
-    return Stepper(
-        steps: getSteps(),
-      type: StepperType.horizontal,
-      currentStep: currentstep,
+    return Column(
+      children: [
+        Container(
+          height: 30,
+          child: Stepper(
+              steps: getSteps(),
+            type: StepperType.horizontal,
+            currentStep: currentstep,
+          ),
+        ),
+      ],
     );
   }
 }
