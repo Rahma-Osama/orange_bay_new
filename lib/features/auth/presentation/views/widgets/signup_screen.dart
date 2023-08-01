@@ -42,7 +42,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     labelText: 'Fullname',
                     border: OutlineInputBorder(),
                   ),
-                  keyboardType: TextInputType.emailAddress,
+                  keyboardType: TextInputType.text,
                   onFieldSubmitted: (value){
                     print(value);
                   },

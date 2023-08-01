@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:orange_bay_new/constants.dart';
-import 'package:orange_bay_new/features/home/cubit/layout_cubit.dart';
-import 'package:orange_bay_new/features/home/cubit/layout_states.dart';
+
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+
+import '../../features/home/presentation/view_model/cubit/layout_cubit.dart';
+import '../../features/home/presentation/view_model/cubit/layout_states.dart';
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
 

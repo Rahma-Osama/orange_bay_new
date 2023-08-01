@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/features/payment/presentation/views/user_view.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/second_container.dart';
 import 'package:orange_bay_new/features/program/presentation/views/widgets/summary-container.dart';
 
@@ -25,7 +26,9 @@ class _BookBodyState extends State<BookBody> {
             child: CustomButton(
               backgroundColor: MAIN_ORANGE,
               text: 'Pay Now',
-              func: (){},
+              func: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> const UserView()));
+              },
               width: MediaQuery.of(context).size.width*.48,
             ),
           ),

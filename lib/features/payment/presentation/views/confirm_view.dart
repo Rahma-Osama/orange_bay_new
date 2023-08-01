@@ -8,7 +8,7 @@ class ConfirmView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(),
+      appBar: CustomAppBar(context: context),
       body: ConfirmBody(),
     );
   }

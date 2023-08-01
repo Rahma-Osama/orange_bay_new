@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:orange_bay_new/core/shred_widgets/app_bar.dart';
-import 'package:orange_bay_new/features/home/cubit/layout_cubit.dart';
-import 'package:orange_bay_new/features/home/cubit/layout_states.dart';
+
 import 'package:orange_bay_new/features/home/presentation/views/widgets/home_body.dart';
 
 import '../../../../core/shred_widgets/bottom_nav_bar.dart';
+import '../view_model/cubit/layout_cubit.dart';
+import '../view_model/cubit/layout_states.dart';
 class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);
 

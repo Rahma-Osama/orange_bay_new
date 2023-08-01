@@ -38,7 +38,7 @@ class CustomButton extends StatelessWidget {
           child: Text(
             text,
             style: Styles.TextStyle16.copyWith(
-              color: Colors.white,
+              color: textColor,
               height: 1,
             ),
           ),

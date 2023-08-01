@@ -24,7 +24,7 @@ class _LogInEmailState extends State<LogInEmail> {
         },
         controller: emailController,
         type: TextInputType.emailAddress,
-        label: 'Enter Your Email',
+        hint: 'Enter Your Email',
         validate: (val){
           if(val.isEmpty || !val.contains('@')){
             return 'Invalid email';
