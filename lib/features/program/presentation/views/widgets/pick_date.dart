@@ -3,19 +3,19 @@ import 'package:intl/intl.dart';
 
 import '../../../../../core/shred_widgets/default_text.dart';
 
-class PickDate extends StatefulWidget {
-  const PickDate({Key? key}) : super(key: key);
+class PickDate2 extends StatefulWidget {
+  const PickDate2({Key? key}) : super(key: key);
 
   @override
-  State<PickDate> createState() => _PickDateState();
+  State<PickDate2> createState() => _PickDate2State();
 }
 
-class _PickDateState extends State<PickDate> {
+class _PickDate2State extends State<PickDate2> {
   TextEditingController _fromDateController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 350,
       height: 55,
       child: defaultText(

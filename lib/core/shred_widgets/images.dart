@@ -7,14 +7,29 @@ class SliderImg extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Get the screen width
+    double screenWidth = MediaQuery.of(context).size.width;
+
+    // Calculate the left position based on screen width
+    double leftPosition = screenWidth >= 600 ? 225 : 20;
+
+    // Calculate the top position based on screen width
+    double topPosition = screenWidth >= 600 ? 300 : 150;
+
+    // Calculate the container width based on screen width
+    double containerWidth = screenWidth >= 600 ? 400 : screenWidth - 40;
+
+    // Calculate the container height based on screen width
+    double containerHeight = screenWidth >= 600 ? 80 : 80;
+
     return Positioned(
-      left: 225,
-      top: 300,
+      left: leftPosition,
+      top: topPosition,
       child: Opacity(
         opacity: 0.60,
         child: Container(
-          width: 400,
-          height: 80,
+          width: containerWidth,
+          height: containerHeight,
           decoration: ShapeDecoration(
             color: Colors.white,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -26,7 +41,6 @@ class SliderImg extends StatelessWidget {
           ),
         ),
       ),
-
     );
   }
 }

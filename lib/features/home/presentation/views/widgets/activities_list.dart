@@ -5,7 +5,15 @@ class Activities extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(height: MediaQuery.of(context).size.height/3,child: ListView.builder(itemCount:3,itemBuilder: (context,index)=>ActivitiesContainr(index: index,),scrollDirection: Axis.horizontal,));
+    return SizedBox(
+        height: MediaQuery.of(context).size.height / 3,
+        child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (context, index) => ActivitiesContainr(
+            index: index,
+          ),
+          scrollDirection: Axis.horizontal,
+        ));
   }
 
 }

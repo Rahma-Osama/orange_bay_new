@@ -12,13 +12,12 @@ class _PickTimeState extends State<PickTime> {
   var timeController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return  SizedBox(
       width: 350,
       height: 55,
       child: defaultText(
         controller: timeController,
         type: TextInputType.datetime,
-        label: 'Task time',
         prefix: Icons.watch_later_outlined,
         tap: (){
           showTimePicker(

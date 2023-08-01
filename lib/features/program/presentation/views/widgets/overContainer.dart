@@ -9,9 +9,9 @@ class FirstContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal:6,vertical: MediaQuery.of(context).size.height/40),
+      padding: EdgeInsets.symmetric(horizontal:10,vertical: MediaQuery.of(context).size.height/40),
       child: Container(
-        height: MediaQuery.of(context).size.height *.15,
+        height: MediaQuery.of(context).size.height *.35,
         decoration: ShapeDecoration(
           color: Colors.white,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
@@ -22,7 +22,7 @@ class FirstContainer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'OverView',
+                'Overview',
                 style: Styles.TextStyle14,
               ),
               const SizedBox(height: 16),
