@@ -18,9 +18,11 @@ class _SignUpViewState extends State<SignUpView> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      appBar: CustomAppBar(),
-      body: SignUPMain(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: CustomAppBar(context: context) ,
+        body: SignUPMain(),
+      ),
     );
   }
 }
