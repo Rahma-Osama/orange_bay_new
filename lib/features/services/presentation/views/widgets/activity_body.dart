@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/features/services/presentation/views/widgets/activities_item.dart';
 
-import '../../../../home/presentation/views/widgets/activities_container.dart';
 
 class ActivityBody extends StatefulWidget {
   const ActivityBody({Key? key}) : super(key: key);
@@ -18,6 +18,6 @@ class _ActivityBodyState extends State<ActivityBody> {
           mainAxisSpacing: MediaQuery.of(context).size.height/40,
           crossAxisSpacing: MediaQuery.of(context).size.height/40,
           childAspectRatio: .9,
-          crossAxisCount: 2,), itemBuilder: (context,index)=>ActivitiesContainr(index: index%3,));
+          crossAxisCount: 2,), itemBuilder: (context,index)=>ActivityItem(index: index%3,));
   }
 }
