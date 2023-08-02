@@ -20,11 +20,11 @@ class _UserBodyState extends State<UserBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(15.0),
       child: SingleChildScrollView(
         child: Column(
           children: [
-            // Expanded(child: StepperScreen()),
+            StepperScreen(),
             Container(
               decoration:  BoxDecoration(
                 color: Colors.white,
@@ -41,7 +41,7 @@ class _UserBodyState extends State<UserBody> {
               child: Padding(
                 padding:  EdgeInsets.symmetric(
                   horizontal:20,
-                  vertical: MediaQuery.of(context).size.height/50
+                  vertical: MediaQuery.of(context).size.height/90
               ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

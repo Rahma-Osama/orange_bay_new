@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 
-Widget defaultText({
+Widget defaultTextPro({
   TextEditingController? controller ,
   required TextInputType type,
   Function(String)? onChange,
   FormFieldValidator? validate,
-   String? label ,
+  String? label ,
   String? hint ,
   IconData? prefix,
   bool isObscure = false,

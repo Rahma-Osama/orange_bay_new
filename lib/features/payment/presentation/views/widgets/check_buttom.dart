@@ -29,9 +29,13 @@ class _CheckButtomState extends State<CheckButtom> {
               });
             }
         ),
-        Text(
-          widget.text,
-          style: Styles.TextStyle14.copyWith(color: Colors.black),
+        Expanded(
+          child: Text(
+            widget.text,
+            style: Styles.TextStyle14.copyWith(color: Colors.black),
+            softWrap: true,
+            overflow: TextOverflow.visible,
+          ),
         ),
       ],
     );
