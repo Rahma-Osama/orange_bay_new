@@ -4,6 +4,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/home_body.dart';
+import 'package:orange_bay_new/features/more_page/presentation/views/More_view.dart';
 
 
 import '../../../../services/presentation/views/Services_layout.dart';
@@ -22,7 +23,8 @@ class LayoutCubit extends Cubit<LayoutStates> {
   List<Widget> screens = [
    HomeBody(),
    HomeBody(),
-    ServicesLayout()
+    ServicesLayout(),
+    MoreView()
 
   ];
 }

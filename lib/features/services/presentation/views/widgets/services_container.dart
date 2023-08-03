@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/assets.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
 import 'package:orange_bay_new/features/services/presentation/views/activity_view.dart';
+import 'package:orange_bay_new/features/services/presentation/views/memberships_view.dart';
 import 'package:orange_bay_new/features/services/presentation/views/restaurant_layout.dart';
+import 'package:orange_bay_new/features/services/presentation/views/videos_view.dart';
 
 import '../../../../../constants.dart';
 import '../gallery_view.dart';
+import '../shops_view.dart';
 class ServiceContainer extends StatelessWidget {
    ServiceContainer({Key? key,required this.index}) : super(key: key);
 final index;
@@ -40,7 +43,10 @@ final index;
   List screens=[
     RestLayout(),
     ActivityView(),
-    GalleryView()
+    VideosView(),
+    GalleryView(),
+    MemberShipView(),
+    shopView()
 
   ];
 
