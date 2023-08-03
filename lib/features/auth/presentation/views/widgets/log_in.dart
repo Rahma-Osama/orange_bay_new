@@ -3,6 +3,7 @@ import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart
 
 import '../../../../../constants.dart';
 import '../../../../../core/utilities/styles.dart';
+import '../../../../program/presentation/views/book_view.dart';
 import '../signup_view.dart';
 import 'auth_sign_card.dart';
 
@@ -95,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomeLayout(),
+                          builder: (context) => const BookView(),
                         ),
                       );
                     },

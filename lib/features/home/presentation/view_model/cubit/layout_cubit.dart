@@ -7,6 +7,8 @@ import 'package:orange_bay_new/features/home/presentation/views/widgets/home_bod
 import 'package:orange_bay_new/features/more_page/presentation/views/More_view.dart';
 
 
+import '../../../../booking_history/presentation/views/book_view.dart';
+import '../../../../booking_history/presentation/views/widgets/book_body.dart';
 import '../../../../services/presentation/views/Services_layout.dart';
 import 'layout_states.dart';
 
@@ -22,9 +24,9 @@ class LayoutCubit extends Cubit<LayoutStates> {
 
   List<Widget> screens = [
    HomeBody(),
-   HomeBody(),
+    BookBody(),
     ServicesLayout(),
-    MoreView()
+    MoreView(),
 
   ];
 }

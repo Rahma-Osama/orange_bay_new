@@ -9,6 +9,7 @@ import '../../../../../core/shred_widgets/back_ground.dart';
 import '../../../../../core/shred_widgets/custom_button.dart';
 import '../../../../../core/shred_widgets/images.dart';
 import '../../../../../core/utilities/styles.dart';
+import '../../../../auth/presentation/views/login_view.dart';
 import 'overview.dart';
 
 class ProBody extends StatefulWidget {
@@ -108,7 +109,7 @@ class _ProBodyState extends State<ProBody> {
               backgroundColor: MAIN_ORANGE,
               text: 'Book Now',
               func: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> BookView()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> LoginView()));
               },
               width:double.infinity,
             ),

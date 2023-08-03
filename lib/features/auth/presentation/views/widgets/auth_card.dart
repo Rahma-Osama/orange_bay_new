@@ -4,6 +4,7 @@ import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart
 
 import '../../../../../constants.dart';
 
+import '../../../../program/presentation/views/book_view.dart';
 import 'log_in.dart';
 import 'log_in_pass.dart';
 import 'login_text.dart';
@@ -70,7 +71,7 @@ class _AuthCardState extends State<AuthCard> with SingleTickerProviderStateMixin
    try{
      Navigator.push(
        context,
-       MaterialPageRoute(builder: (context) => HomeLayout()), // Replace NewPage with the desired destination page
+       MaterialPageRoute(builder: (context) => BookView()), // Replace NewPage with the desired destination page
      );
    } catch(error){
 
