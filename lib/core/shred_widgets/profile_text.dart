@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
+import 'package:orange_bay_new/core/utilities/styles.dart';
 
 Widget defaultTextPro({
   TextEditingController? controller ,
@@ -25,16 +26,23 @@ Widget defaultTextPro({
   decoration:  InputDecoration(
     labelText: label,
     hintText: hint,
+    hintStyle: Styles.TextStyleNormal14,
     prefixIcon: Icon(prefix),
     suffixIcon: suffix!=null ? IconButton(
       onPressed: pressed,
       icon: Icon(
-        suffix,),
+        suffix,
+        color: MAIN_ORANGE,
+      ),
     )
         : null,
-    border: const OutlineInputBorder(),
-    focusedBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: MAIN_ORANGE, width: 2.0),
+    enabledBorder: const OutlineInputBorder(
+      borderSide: BorderSide.none,
+    ),
+    contentPadding: const EdgeInsets.symmetric(
+        vertical: 10, horizontal: 16),
+    focusedBorder: const OutlineInputBorder(
+      borderSide: BorderSide(color: Colors.transparent, width: 2.0),
     ),
   ),
 

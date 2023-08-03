@@ -9,7 +9,8 @@ class ProfileView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: const Scaffold(
+      child:  Scaffold(
+        backgroundColor: Colors.grey[100],
         appBar: AppBarButtom3(text: 'My Profile',),
         body: ProfileBody(),
       ),

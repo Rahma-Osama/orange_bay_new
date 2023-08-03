@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:orange_bay_new/constants.dart';
 class PickDate extends StatefulWidget {
   const PickDate({Key? key}) : super(key: key);
 
@@ -36,14 +37,14 @@ class _PickDateState extends State<PickDate> {
               });
             }
           },
-          decoration: const InputDecoration(
+          decoration:  InputDecoration(
             hintText: 'Pick a Date',
             prefixIcon: Icon(Icons.calendar_today_rounded),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide.none,
             ),
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.blue),
+              borderSide: BorderSide(color: MAIN_ORANGE),
             ),
             contentPadding: EdgeInsets.symmetric(
                 vertical: 10, horizontal: 16),
