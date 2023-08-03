@@ -98,10 +98,10 @@ class _ProBodyState extends State<ProBody> {
                 )),
           ),
           programDetailsIsSelected[0]
-              ? Overview()
+              ? const Overview()
               : programDetailsIsSelected[1]
               ? ProgramsDetails()
-              : Reviews(),
+              : const Reviews(),
           Padding(
             padding: const EdgeInsets.all(8),
             child: CustomButton(

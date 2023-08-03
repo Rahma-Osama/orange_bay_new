@@ -26,43 +26,6 @@ class _ProfileBodyState extends State<ProfileBody> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: 60,
-              padding: EdgeInsets.all(8),
-              child: ListView.builder(
-                  itemCount: 2,
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        profileText = [false, false, false];
-                        profileText[index] = true;
-                      });
-                    },
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: profileText[index]
-                            ? BorderRadius.circular(10)
-                            : BorderRadius.circular(0),
-                        color: profileText[index] ? MAIN_ORANGE : Colors.white,
-                      ),
-                      alignment: Alignment.center,
-                      width: MediaQuery.of(context).size.width * .3,
-                      child: Text(
-                        profDetails[index],
-                        style: TextStyle(
-                            color: profileText[index]
-                                ? Colors.white
-                                : Colors.black),
-                      ),
-                    ),
-                  )),
-            ),
-            profileText[0]
-                ? ProfileBody()
-                : profileText[1]
-                ? SecurityBody()
-                : SizedBox(),
              ContainerProfile(
               type: TextInputType.text,
               text: 'First Name',
@@ -79,15 +42,7 @@ class _ProfileBodyState extends State<ProfileBody> {
               type: TextInputType.number,
               text: 'Phone Number',
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: CustomButton(
-                  backgroundColor: MAIN_ORANGE,
-                  text: 'update',
-                  func: (){},
-                  width:double.infinity
-              ),
-            ),
+
           ],
         ),
       ),

@@ -3,6 +3,7 @@ import 'package:orange_bay_new/features/more_page/presentation/views/widgets/pro
 import 'package:orange_bay_new/features/more_page/presentation/views/widgets/security_body.dart';
 
 import '../../../../../constants.dart';
+import '../../../../../core/shred_widgets/custom_button.dart';
 
 
 class HeaderText extends StatefulWidget {
@@ -21,7 +22,7 @@ class _HeaderTextState extends State<HeaderText> {
       children: [
         Container(
           height: 60,
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           child: ListView.builder(
               itemCount: 2,
               scrollDirection: Axis.horizontal,
@@ -34,9 +35,7 @@ class _HeaderTextState extends State<HeaderText> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: profileText[index]
-                            ? BorderRadius.circular(10)
-                            : BorderRadius.circular(0),
+                        borderRadius:  BorderRadius.circular(5),
                         color: profileText[index] ? MAIN_ORANGE : Colors.white,
                       ),
                       alignment: Alignment.center,
@@ -51,15 +50,22 @@ class _HeaderTextState extends State<HeaderText> {
                     ),
                   )),
         ),
-        // Expanded(
-        //   child: IndexedStack(
-        //     index: selectedIndex, // Show the content based on selectedIndex
-        //     children: [
-        //       ProfileBody(), // ProfileView or any other widget for Basic Info
-        //       SecurityBody(), // SecurityView or any other widget for Security
-        //     ],
-        //   ),
-        // ),
+        profileText[0]
+            ? const ProfileBody()
+            : profileText[1]
+            ? SecurityBody()
+            : const SizedBox(),
+        Padding(
+          padding: const EdgeInsets.all(30),
+          child: CustomButton(
+            backgroundColor: MAIN_ORANGE,
+            text: 'Update',
+            func: (){
+              // Navigator.push(context, MaterialPageRoute(builder: (context)=> BookView()));
+            },
+            width:double.infinity,
+          ),
+        ),
       ],
     );
   }

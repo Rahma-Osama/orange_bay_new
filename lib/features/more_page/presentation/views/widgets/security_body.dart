@@ -13,6 +13,8 @@ class SecurityBody extends StatefulWidget {
 
 class _SecurityBodyState extends State<SecurityBody> {
   bool isPasswordVisible2 = false;
+  bool isPasswordVisible3 = false;
+  bool isPasswordVisible4 = false;
   @override
   Widget build(BuildContext context) {
     return  Padding(
@@ -28,40 +30,33 @@ class _SecurityBodyState extends State<SecurityBody> {
                 isPasswordVisible2 = !isPasswordVisible2;
               });
             },
-
+            isObscure: !isPasswordVisible2,
           ),
           Divider(),
           ContainerProfile(
             type: TextInputType.text,
             text: 'New Password',
-            suffix: isPasswordVisible2 ? Icons.visibility : Icons.visibility_off,
+            suffix: isPasswordVisible3 ? Icons.visibility : Icons.visibility_off,
             pressed: () {
               setState(() {
-                isPasswordVisible2 = !isPasswordVisible2;
+                isPasswordVisible3 = !isPasswordVisible3;
               });
             },
-
+           isObscure: !isPasswordVisible3,
           ),
           ContainerProfile(
             type: TextInputType.text,
             text: 'Confirm Password',
-            suffix: isPasswordVisible2 ? Icons.visibility : Icons.visibility_off,
+            suffix: isPasswordVisible4 ? Icons.visibility : Icons.visibility_off,
             pressed: () {
               setState(() {
-                isPasswordVisible2 = !isPasswordVisible2;
+                isPasswordVisible4 = !isPasswordVisible4;
               });
             },
+           isObscure: !isPasswordVisible4,
+          ),
 
-          ),
-          Padding(
-            padding:  EdgeInsets.all(8.0),
-            child: CustomButton(
-                backgroundColor: MAIN_ORANGE,
-                text: 'update',
-                func: (){},
-                width:double.infinity
-            ),
-          ),
+
         ],
       ),
     );

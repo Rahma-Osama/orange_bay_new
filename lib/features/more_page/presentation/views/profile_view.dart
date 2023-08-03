@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:orange_bay_new/core/shred_widgets/app_bar3.dart';
+import 'package:orange_bay_new/features/more_page/presentation/views/widgets/header.dart';
 import 'package:orange_bay_new/features/more_page/presentation/views/widgets/profile_body.dart';
 
 class ProfileView extends StatelessWidget {
@@ -12,7 +13,7 @@ class ProfileView extends StatelessWidget {
       child:  Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: AppBarButtom3(text: 'My Profile',),
-        body: ProfileBody(),
+        body: HeaderText(),
       ),
     );
   }

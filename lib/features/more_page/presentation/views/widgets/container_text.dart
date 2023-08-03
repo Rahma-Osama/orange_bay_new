@@ -7,7 +7,8 @@ class ContainerProfile extends StatelessWidget {
   final TextInputType type;
   final IconData? suffix;
   final Function()? pressed;
-    ContainerProfile({Key? key, required this.text, required this.type, this.suffix, this.pressed,   }) : super(key: key);
+  final bool? isObscure;
+    ContainerProfile({Key? key, required this.text, required this.type, this.suffix, this.pressed, this.isObscure  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +26,7 @@ class ContainerProfile extends StatelessWidget {
           hint: text,
           suffix: suffix,
           pressed: pressed,
+          isObscure: isObscure ?? false,
         ),
       ),
     );
