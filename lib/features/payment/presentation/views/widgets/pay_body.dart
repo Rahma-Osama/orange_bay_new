@@ -14,6 +14,10 @@ class PayBody extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Column(
         children: [
+          const Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Center(child: Image(image: AssetImage('assets/images/step3.png' ,)  )),
+          ),
           Container(
             decoration:  BoxDecoration(
               color: Colors.white,

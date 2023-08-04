@@ -11,7 +11,7 @@ class UserView extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.grey[100],
+        // backgroundColor: Colors.grey[100],
         appBar: CustomAppBar(context: context) ,
         body: UserBody(),
       ),

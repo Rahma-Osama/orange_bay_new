@@ -6,7 +6,7 @@ import '../utilities/assets.dart';
 
  CustomAppBar({context}){
   return AppBar(
-    backgroundColor: Colors.grey[100],
+    backgroundColor: Colors.transparent,
     elevation: 0,
     title: Padding(
       padding: const EdgeInsets.only(top: 8.0),
