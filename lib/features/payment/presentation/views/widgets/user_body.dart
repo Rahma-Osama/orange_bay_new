@@ -24,18 +24,21 @@ class _UserBodyState extends State<UserBody> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const Image(image: AssetImage('assets/images/step1.png')),
+            const Padding(
+              padding: EdgeInsets.all(15.0),
+              child: Image(image: AssetImage('assets/images/Group 759.png' ,)  ),
+            ),
             // StepperScreen(),
             Container(
               decoration:  BoxDecoration(
                 color: Colors.white,
-                borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
+                borderRadius: BorderRadius.circular(10),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey.withOpacity(0.5), // Set the shadow color
                     spreadRadius: 2, // Set the spread radius of the shadow
                     blurRadius: 6, // Set the blur radius of the shadow
-                    offset: Offset(0, 3), // Set the offset of the shadow
+                    offset: const Offset(0, 3), // Set the offset of the shadow
                   ),
                 ],
               ),
@@ -51,39 +54,39 @@ class _UserBodyState extends State<UserBody> {
                         'Add user data',
                       style: Styles.TextStyle18,
                     ),
-                    SizedBox(height: 12,),
+                    const SizedBox(height: 12,),
                     Text(
                       'Email Address',
                       style: Styles.TextStyle14.copyWith(color: Colors.black),
                     ),
-                    SizedBox(height: 8,),
-                    LogInEmail(),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 8,),
+                    const LogInEmail(),
+                    const SizedBox(height: 15,),
                     Text(
                       'Full Name',
                       style: Styles.TextStyle14.copyWith(color: Colors.black),
                     ),
-                    SizedBox(height: 8,),
+                    const SizedBox(height: 8,),
                 defaultText(
                   type: TextInputType.text,
                   hint: 'Enter Your full name',
                 ),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
                     Text(
                       'Phone Number',
                       style: Styles.TextStyle14.copyWith(color: Colors.black),
                     ),
-                    SizedBox(height: 8,),
+                    const SizedBox(height: 8,),
                     defaultText(
                       type: TextInputType.phone,
                       hint: 'Enter Your phone',
                     ),
-                    SizedBox(height: 15,),
+                    const SizedBox(height: 15,),
                     Text(
                       'Your Request',
                       style: Styles.TextStyle14.copyWith(color: Colors.black),
                     ),
-                    SizedBox(height: 8,),
+                    const SizedBox(height: 8,),
                     defaultText(
                       type: TextInputType.text,
                       hint: 'Enter Your request',
@@ -92,7 +95,7 @@ class _UserBodyState extends State<UserBody> {
                 ),
               ),
             ),
-            SizedBox(height: 24,),
+            const SizedBox(height: 24,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -106,8 +109,8 @@ class _UserBodyState extends State<UserBody> {
                 ),
               ],
             ),
-            SizedBox(height: 24,),
-            CheckButtom(
+            const SizedBox(height: 24,),
+            const CheckButtom(
               text: 'I Accept Terms And Conditions and Cancellation policy \n Read Terms and conditions',
             ),
             Padding(
@@ -116,7 +119,7 @@ class _UserBodyState extends State<UserBody> {
                 backgroundColor: MAIN_ORANGE,
                 text: 'Pay',
                 func: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> ConfirmView()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const ConfirmView()));
                 },
                 width:double.infinity,
               ),

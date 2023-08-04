@@ -17,7 +17,7 @@ class PayBody extends StatelessWidget {
           Container(
             decoration:  BoxDecoration(
               color: Colors.white,
-              borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
+              borderRadius: BorderRadius.circular(10),
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5), // Set the shadow color
