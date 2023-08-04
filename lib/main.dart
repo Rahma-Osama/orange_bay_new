@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/features/auth/presentation/views/login_view.dart';
 import 'package:orange_bay_new/features/auth/presentation/views/signup_view.dart';
+import 'package:orange_bay_new/features/booking_history/presentation/views/book_view.dart';
 import 'package:orange_bay_new/features/more_page/presentation/views/profile_view.dart';
 import 'package:orange_bay_new/features/more_page/presentation/views/security_view.dart';
 import 'package:orange_bay_new/features/payment/presentation/views/user_view.dart';
@@ -18,7 +19,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileView(),
+      home: BookingView(),
     );
   }
 }
