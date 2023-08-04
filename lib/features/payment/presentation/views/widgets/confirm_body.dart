@@ -13,7 +13,6 @@ class ConfirmBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bool isSelected;
     return Padding(
       padding: const EdgeInsets.all(15.0),
       child: SingleChildScrollView(
@@ -25,7 +24,7 @@ class ConfirmBody extends StatelessWidget {
               child: Center(child: Image(image: AssetImage('assets/images/step2.png' ,)  )),
             ),
             Text('Choose payment method' , style: Styles.TextStyle18,),
-            PayMethod(),
+            const PayMethod(),
            Container(
              decoration:  BoxDecoration(
                color: Colors.white,
@@ -35,7 +34,7 @@ class ConfirmBody extends StatelessWidget {
                    color: Colors.grey.withOpacity(0.5), // Set the shadow color
                    spreadRadius: 2, // Set the spread radius of the shadow
                    blurRadius: 6, // Set the blur radius of the shadow
-                   offset: Offset(0, 3), // Set the offset of the shadow
+                   offset: const Offset(0, 3), // Set the offset of the shadow
                  ),
                ],
              ),
@@ -51,21 +50,21 @@ class ConfirmBody extends StatelessWidget {
                      'Credit Card',
                      style: Styles.TextStyle14.copyWith(color: Colors.black),
                    ),
-                   SizedBox(height: 8,),
+                   const SizedBox(height: 8,),
                    defaultText(
                      type: TextInputType.text,
                    ),
-                   SizedBox(height: 8,),
+                   const SizedBox(height: 8,),
 
                    Text(
                      'Name on card',
                      style: Styles.TextStyle14.copyWith(color: Colors.black),
                    ),
-                   SizedBox(height: 8,),
+                   const SizedBox(height: 8,),
                    defaultText(
                      type: TextInputType.text,
                    ),
-                   SizedBox(height: 8,),
+                   const SizedBox(height: 8,),
                    Row(
                      children: [
                        Expanded(
@@ -76,7 +75,7 @@ class ConfirmBody extends StatelessWidget {
                                'Expire date',
                                style: Styles.TextStyle14.copyWith(color: Colors.black),
                              ),
-                             SizedBox(height: 5,),
+                             const SizedBox(height: 5,),
                              SizedBox(
                                width: 250,
                                child: TextField(
@@ -99,7 +98,7 @@ class ConfirmBody extends StatelessWidget {
                                'CVV',
                                style: Styles.TextStyle14.copyWith(color: Colors.black),
                              ),
-                             SizedBox(height: 5,),
+                             const SizedBox(height: 5,),
                              SizedBox(
                                width: 250,
                                child: TextField(
@@ -117,15 +116,15 @@ class ConfirmBody extends StatelessWidget {
                      ],
                    ),
 
-                   SizedBox(height: 14,),
-                   CheckButtom(
+                   const SizedBox(height: 14,),
+                   const CheckButtom(
                      text: 'Save card for future payment',
                    ),
                  ],
                ),
              ),
            ),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: CustomButton(
@@ -133,7 +132,7 @@ class ConfirmBody extends StatelessWidget {
                   backgroundColor: MAIN_ORANGE,
                   text: 'Confirm',
                   func: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> PayView()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> const PayView()));
                   },
               ),
             ),

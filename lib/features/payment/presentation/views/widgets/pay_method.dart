@@ -19,7 +19,7 @@ class PayMethod extends StatelessWidget {
           height: 50,
           decoration:  BoxDecoration(
             border: Border.all(
-              color: isSelected ? MAIN_ORANGE : Color(0xFF707070),
+              color: isSelected ? MAIN_ORANGE : const Color(0xFF707070),
               width: 1,
             ),
             color: Colors.white,
@@ -29,11 +29,11 @@ class PayMethod extends StatelessWidget {
                 color: Colors.grey.withOpacity(0.5), // Set the shadow color
                 spreadRadius: 2, // Set the spread radius of the shadow
                 blurRadius: 6, // Set the blur radius of the shadow
-                offset: Offset(0, 3), // Set the offset of the shadow
+                offset: const Offset(0, 3), // Set the offset of the shadow
               ),
             ],
           ),
-          child: Image(image: AssetImage('assets/images/pngegg (59).png'),),
+          child: const Image(image: AssetImage('assets/images/pngegg (59).png'),),
         ),
           Container(
             width: 100,
@@ -46,11 +46,11 @@ class PayMethod extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5), // Set the shadow color
                   spreadRadius: 2, // Set the spread radius of the shadow
                   blurRadius: 6, // Set the blur radius of the shadow
-                  offset: Offset(0, 3), // Set the offset of the shadow
+                  offset: const Offset(0, 3), // Set the offset of the shadow
                 ),
               ],
             ),
-            child: Image(image: AssetImage('assets/images/pngegg (60).png'),width: 69 , height: 69,),
+            child: const Image(image: AssetImage('assets/images/pngegg (60).png'),width: 69 , height: 69,),
           ),
           Container(
             width: 100,
@@ -63,7 +63,7 @@ class PayMethod extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5), // Set the shadow color
                   spreadRadius: 2, // Set the spread radius of the shadow
                   blurRadius: 6, // Set the blur radius of the shadow
-                  offset: Offset(0, 3), // Set the offset of the shadow
+                  offset: const Offset(0, 3), // Set the offset of the shadow
                 ),
               ],
             ),

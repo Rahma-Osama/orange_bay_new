@@ -11,8 +11,8 @@ class WishListView extends StatelessWidget {
     return SafeArea(
       child:  Scaffold(
         backgroundColor: Colors.grey[100],
-        appBar: AppBarButtom3(text: 'WishList',),
-        body:WishListBody()
+        appBar: const AppBarButtom3(text: 'WishList',),
+        body:const WishListBody()
       ),
     );
   }

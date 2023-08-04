@@ -7,7 +7,7 @@ class ActivityView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
         appBar: AppBarButtom3(text: 'Activities',),
         body: ActivityBody(),

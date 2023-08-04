@@ -18,7 +18,7 @@ final index;
       onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>screens[index])),
       child: Container(
 
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10)  ,
           color: Colors.white
@@ -41,12 +41,12 @@ final index;
   List servicesHeaders=['Restaurants','Activities','Videos','Photos','Memberships','Shops'];
   List servicesData=['12 Restaurants','8 Activities','10 Videos','40 Photos','6 Memberships','35 Shops'];
   List screens=[
-    RestLayout(),
-    ActivityView(),
-    VideosView(),
-    GalleryView(),
-    MemberShipView(),
-    shopView()
+    const RestLayout(),
+    const ActivityView(),
+    const VideosView(),
+    const GalleryView(),
+    const MemberShipView(),
+    const shopView()
 
   ];
 

@@ -13,25 +13,25 @@ class _SplashScreenState extends State<SplashScreen> {
   int _currentPage = 0;
 
   late Timer _timer;
-  PageController _pageController = PageController(
+  final PageController _pageController = PageController(
     initialPage: 0,
   );
 
   @override
   void initState() {
     super.initState();
-    _timer = Timer.periodic(Duration(seconds: 1), (Timer timer) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (Timer timer) {
       if (_currentPage < 2) {
         _currentPage++;
       } else {
         setState(() {
-          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeLayout()));
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const HomeLayout()));
         });
       }
 
       _pageController.animateToPage(
         _currentPage,
-        duration: Duration(milliseconds: 500),
+        duration: const Duration(milliseconds: 500),
         curve: Curves.easeIn,
       );
     });
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: new AssetImage(AssetData.splash[0]),
+              image: AssetImage(AssetData.splash[0]),
               fit: BoxFit.cover,
             ),
           ),
@@ -59,7 +59,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: new AssetImage(AssetData.splash[1]),
+              image: AssetImage(AssetData.splash[1]),
               fit: BoxFit.cover,
             ),
           ),
@@ -67,7 +67,7 @@ class _SplashScreenState extends State<SplashScreen> {
         Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: new AssetImage(AssetData.splash[2]),
+              image: AssetImage(AssetData.splash[2]),
               fit: BoxFit.cover,
             ),
           ),

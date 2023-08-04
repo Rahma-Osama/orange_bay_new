@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/shred_widgets/app_bar3.dart';
-import 'package:orange_bay_new/features/services/presentation/views/widgets/activity_body.dart';
 import 'package:orange_bay_new/features/services/presentation/views/widgets/gallery_body.dart';
 
 class GalleryView extends StatelessWidget {
@@ -11,8 +10,8 @@ class GalleryView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey[100],
-        appBar: AppBarButtom3(text: 'Photos',),
-        body: GalleryBody(),
+        appBar: const AppBarButtom3(text: 'Photos',),
+        body: const GalleryBody(),
       ),
     );
   }

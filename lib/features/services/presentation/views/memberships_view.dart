@@ -16,7 +16,7 @@ class _MemberShipViewState extends State<MemberShipView> {
     return SafeArea(
       child: Scaffold(
           backgroundColor: Colors.grey[100],
-          appBar: AppBarButtom3(text: 'Memberships',) ,
+          appBar: const AppBarButtom3(text: 'Memberships',) ,
           body: Container()
       ),
     );

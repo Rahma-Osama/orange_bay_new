@@ -27,7 +27,7 @@ class PayBody extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5), // Set the shadow color
                   spreadRadius: 2, // Set the spread radius of the shadow
                   blurRadius: 6, // Set the blur radius of the shadow
-                  offset: Offset(0, 3), // Set the offset of the shadow
+                  offset: const Offset(0, 3), // Set the offset of the shadow
                 ),
               ],
             ),
@@ -39,14 +39,14 @@ class PayBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Center(child: Image(image: AssetImage('assets/images/pngegg (81).png'))),
-                  SizedBox(height: 20,),
+                  const Center(child: Image(image: AssetImage('assets/images/pngegg (81).png'))),
+                  const SizedBox(height: 20,),
                   Text(
                       'Classic Program',
                     style: Styles.TextStyle16.copyWith(fontWeight: FontWeight.w700,color: Colors.black),
                   ),
                   const SizedBox(height: 5,),
-                  Text(
+                  const Text(
                       'Cancellation Deadline: 10/3/2023',
                     style: TextStyle(
                       color: Color(0xFFE20D0D),
@@ -84,7 +84,7 @@ class PayBody extends StatelessWidget {
                     'Additional Services',
                     style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w600),
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -100,7 +100,7 @@ class PayBody extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 10,),
-                  Divider(),
+                  const Divider(),
                   const SizedBox(height: 10,),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
@@ -130,7 +130,7 @@ class PayBody extends StatelessWidget {
               backgroundColor: MAIN_ORANGE,
               text: 'Confirm',
               func: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> HomeLayout()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> const HomeLayout()));
               },
             ),
           ),
