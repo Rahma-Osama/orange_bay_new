@@ -14,95 +14,125 @@ class ConfirmBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(15.0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Choose payment method'),
+          Text('Choose payment method' , style: Styles.TextStyle18,),
           PayMethod(),
-          Text(
-            'Credit Card',
-            style: Styles.TextStyle14.copyWith(color: Colors.black),
-          ),
-          SizedBox(height: 8,),
-          defaultText(
-            type: TextInputType.text,
-          ),
-          SizedBox(height: 8,),
+         Container(
+           decoration:  BoxDecoration(
+             color: Colors.white,
+             borderRadius: const BorderRadius.all(Radius.elliptical(3, 3)),
+             boxShadow: [
+               BoxShadow(
+                 color: Colors.grey.withOpacity(0.5), // Set the shadow color
+                 spreadRadius: 2, // Set the spread radius of the shadow
+                 blurRadius: 6, // Set the blur radius of the shadow
+                 offset: Offset(0, 3), // Set the offset of the shadow
+               ),
+             ],
+           ),
+           child: Padding(
+             padding:  EdgeInsets.symmetric(
+                 horizontal:20,
+                 vertical: MediaQuery.of(context).size.height/90
+             ),
+             child: Column(
+               crossAxisAlignment: CrossAxisAlignment.start,
+               children: [
+                 Text(
+                   'Credit Card',
+                   style: Styles.TextStyle14.copyWith(color: Colors.black),
+                 ),
+                 SizedBox(height: 8,),
+                 defaultText(
+                   type: TextInputType.text,
+                 ),
+                 SizedBox(height: 8,),
 
-          Text(
-            'Name on card',
-            style: Styles.TextStyle14.copyWith(color: Colors.black),
-          ),
-          SizedBox(height: 8,),
-          defaultText(
-            type: TextInputType.text,
-          ),
-          Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Expire date',
-                      style: Styles.TextStyle14.copyWith(color: Colors.black),
-                    ),
-                    SizedBox(height: 5,),
-                    SizedBox(
-                      width: 250,
-                      child: TextField(
-                        decoration:  InputDecoration(
-                          border:  OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 16),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'CVV',
-                      style: Styles.TextStyle14.copyWith(color: Colors.black),
-                    ),
-                    SizedBox(height: 5,),
-                    SizedBox(
-                      width: 250,
-                      child: TextField(
-                        decoration:  InputDecoration(
-                          border:  OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                          hintText: 'CVV',
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+                 Text(
+                   'Name on card',
+                   style: Styles.TextStyle14.copyWith(color: Colors.black),
+                 ),
+                 SizedBox(height: 8,),
+                 defaultText(
+                   type: TextInputType.text,
+                 ),
+                 SizedBox(height: 8,),
+                 Row(
+                   children: [
+                     Expanded(
+                       child: Column(
+                         crossAxisAlignment: CrossAxisAlignment.start,
+                         children: [
+                           Text(
+                             'Expire date',
+                             style: Styles.TextStyle14.copyWith(color: Colors.black),
+                           ),
+                           SizedBox(height: 5,),
+                           SizedBox(
+                             width: 250,
+                             child: TextField(
+                               decoration:  InputDecoration(
+                                 border:  OutlineInputBorder(
+                                   borderRadius: BorderRadius.circular(5),
+                                 ),
+                               ),
+                             ),
+                           ),
+                         ],
+                       ),
+                     ),
+                     const SizedBox(width: 16),
+                     Expanded(
+                       child: Column(
+                         crossAxisAlignment: CrossAxisAlignment.start,
+                         children: [
+                           Text(
+                             'CVV',
+                             style: Styles.TextStyle14.copyWith(color: Colors.black),
+                           ),
+                           SizedBox(height: 5,),
+                           SizedBox(
+                             width: 250,
+                             child: TextField(
+                               decoration:  InputDecoration(
+                                 border:  OutlineInputBorder(
+                                   borderRadius: BorderRadius.circular(5),
+                                 ),
+                                 hintText: 'CVV',
+                               ),
+                             ),
+                           ),
+                         ],
+                       ),
+                     ),
+                   ],
+                 ),
 
-          SizedBox(height: 14,),
-          CheckButtom(
-            text: 'Save card for future payment',
-          ),
+                 SizedBox(height: 14,),
+                 CheckButtom(
+                   text: 'Save card for future payment',
+                 ),
+               ],
+             ),
+           ),
+         ),
           SizedBox(height: 50,),
-          CustomButton(
-              width: double.infinity,
-              backgroundColor: MAIN_ORANGE,
-              text: 'Confirm',
-              func: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> PayView()));
-              },
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: CustomButton(
+                width: double.infinity,
+                backgroundColor: MAIN_ORANGE,
+                text: 'Confirm',
+                func: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> PayView()));
+                },
+            ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(15),
             child: CustomButton(
               textColor: MAIN_ORANGE,
               backgroundColor: Colors.white,

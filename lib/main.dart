@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/features/payment/presentation/views/confirm_view.dart';
 
 import 'package:orange_bay_new/features/payment/presentation/views/pay_view.dart';
+
+import 'features/payment/presentation/views/user_view.dart';
 
 
 
@@ -14,7 +17,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PayView(),
+      home: UserView(),
     );
   }
 }

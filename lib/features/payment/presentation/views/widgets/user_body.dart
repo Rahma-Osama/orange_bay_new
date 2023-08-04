@@ -24,6 +24,7 @@ class _UserBodyState extends State<UserBody> {
       child: SingleChildScrollView(
         child: Column(
           children: [
+            const Image(image: AssetImage('assets/images/step1.png')),
             // StepperScreen(),
             Container(
               decoration:  BoxDecoration(
