@@ -26,7 +26,7 @@ class _UserBodyState extends State<UserBody> {
           children: [
             const Padding(
               padding: EdgeInsets.all(15.0),
-              child: Image(image: AssetImage('assets/images/Group 759.png' ,)  ),
+              child: Image(image: AssetImage('assets/images/step1-removebg-preview.png' ,) ),
             ),
             // StepperScreen(),
             Container(
