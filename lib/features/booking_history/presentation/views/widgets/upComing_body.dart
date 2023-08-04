@@ -24,13 +24,13 @@ class UpcomingBody extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5), // Set the shadow color
             spreadRadius: 2, // Set the spread radius of the shadow
             blurRadius: 6, // Set the blur radius of the shadow
-            offset: Offset(0, 3), // Set the offset of the shadow
+            offset: const Offset(0, 3), // Set the offset of the shadow
           ),
         ],
       ),
          child: Column(
            children: [
-             ContainerBody(),
+             const ContainerBody(),
              Padding(
                padding: const EdgeInsets.all(8.0),
                child: Row(
@@ -52,7 +52,7 @@ class UpcomingBody extends StatelessWidget {
                    ),
                    Expanded(
                      child: CustomButton(
-                       backgroundColor: Color(0xFFE72C2C),
+                       backgroundColor: const Color(0xFFE72C2C),
                        text: 'Cancel',
                        func: (){},
                      ),
@@ -77,13 +77,13 @@ class UpcomingBody extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5), // Set the shadow color
                     spreadRadius: 2, // Set the spread radius of the shadow
                     blurRadius: 6, // Set the blur radius of the shadow
-                    offset: Offset(0, 3), // Set the offset of the shadow
+                    offset: const Offset(0, 3), // Set the offset of the shadow
                   ),
                 ],
               ),
               child: Column(
                 children: [
-                  ContainerBody(),
+                  const ContainerBody(),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
@@ -105,7 +105,7 @@ class UpcomingBody extends StatelessWidget {
                         ),
                         Expanded(
                           child: CustomButton(
-                            backgroundColor: Color(0xFFE72C2C),
+                            backgroundColor: const Color(0xFFE72C2C),
                             text: 'Cancel',
                             func: (){},
                           ),

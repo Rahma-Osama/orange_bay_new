@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
 import 'package:orange_bay_new/features/auth/presentation/views/widgets/login_text.dart';
 import 'package:orange_bay_new/features/payment/presentation/views/confirm_view.dart';
-import 'package:orange_bay_new/features/payment/presentation/views/widgets/stepper.dart';
+
 
 import '../../../../../constants.dart';
 import '../../../../../core/shred_widgets/custom_button.dart';
@@ -24,7 +24,7 @@ class _UserBodyState extends State<UserBody> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            StepperScreen(),
+            // StepperScreen(),
             Container(
               decoration:  BoxDecoration(
                 color: Colors.white,
