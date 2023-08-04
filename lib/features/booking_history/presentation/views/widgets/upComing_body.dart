@@ -16,8 +16,8 @@ class UpcomingBody extends StatelessWidget {
       child: Column(
         children: [
        Container(
-      decoration:  BoxDecoration(
-      color: Colors.white,
+       decoration:  BoxDecoration(
+       color: Colors.white,
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
@@ -63,7 +63,12 @@ class UpcomingBody extends StatelessWidget {
            ],
          ),
       ),
-          Container(
+          Padding(
+            padding: EdgeInsets.symmetric(
+                horizontal:3,
+                vertical: MediaQuery.of(context).size.height/50
+            ),
+            child: Container(
               decoration:  BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
@@ -109,7 +114,9 @@ class UpcomingBody extends StatelessWidget {
                     ),
                   ),
                 ],
-              )),
+              ),
+            ),
+          ),
 
         ],
       ),

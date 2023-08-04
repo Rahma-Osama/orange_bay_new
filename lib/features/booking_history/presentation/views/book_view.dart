@@ -12,7 +12,7 @@ class BookingView extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: CustomAppBar(context: context),
-        body: BookBody(),
+        body: const BookBody(),
       ),
     );
   }
