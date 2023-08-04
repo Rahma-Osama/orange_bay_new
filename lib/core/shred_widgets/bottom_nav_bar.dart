@@ -33,7 +33,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
             SalomonBottomBarItem(
               icon: Icon(Icons.calendar_today_rounded),
-              title: Text("Calendar"),
+              title: Text("Booking History"),
               selectedColor: MAIN_ORANGE,        ),
 
             SalomonBottomBarItem(
@@ -43,7 +43,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
             SalomonBottomBarItem(
               icon: Icon(Icons.more_horiz),
-              title: Text("Info"),
+              title: Text("More"),
               selectedColor: MAIN_ORANGE,
             ),
           ],
