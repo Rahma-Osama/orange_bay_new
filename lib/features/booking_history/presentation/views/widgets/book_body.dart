@@ -43,7 +43,7 @@ class _BookBodyState extends State<BookBody> {
                         color: bookText[index] ? MAIN_ORANGE : Colors.white,
                       ),
                       alignment: Alignment.center,
-                      width: MediaQuery.of(context).size.width * .3,
+                      width: MediaQuery.of(context).size.width * .45,
                       child: Text(
                         bookDetails[index],
                         style: TextStyle(

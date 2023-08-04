@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
+import 'package:orange_bay_new/features/program/presentation/views/book_view.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/utilities/styles.dart';
@@ -129,7 +130,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomeLayout(),
+                          builder: (context) => LoginView(),
                         ),
                       );
                     },

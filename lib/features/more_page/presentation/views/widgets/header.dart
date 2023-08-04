@@ -39,7 +39,7 @@ class _HeaderTextState extends State<HeaderText> {
                         color: profileText[index] ? MAIN_ORANGE : Colors.white,
                       ),
                       alignment: Alignment.center,
-                      width: MediaQuery.of(context).size.width * .3,
+                      width: MediaQuery.of(context).size.width * .45,
                       child: Text(
                         profDetails[index],
                         style: TextStyle(
