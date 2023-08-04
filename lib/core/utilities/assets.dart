@@ -71,4 +71,10 @@ class AssetData{
     // "assets/images/gallery/IMG_9883.jpg",
     // "assets/images/gallery/IMG_9902.jpg",
   ];
+
+ static List splash=[
+    "assets/images/IMG_6479.jpg",
+    "assets/images/IMG_5809.jpg",
+    "assets/images/IMG_6451.jpg"
+  ];
 }
