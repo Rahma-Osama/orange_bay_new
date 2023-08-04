@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
 
 class PayMethod extends StatelessWidget {
-  const PayMethod({Key? key}) : super(key: key);
+
+  const PayMethod({Key? key, }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    bool isSelected = true;
     return Padding(
       padding: const EdgeInsets.all(15.0),
       child: Row(
@@ -15,6 +18,10 @@ class PayMethod extends StatelessWidget {
          width: 100,
           height: 50,
           decoration:  BoxDecoration(
+            border: Border.all(
+              color: isSelected ? MAIN_ORANGE : Color(0xFF707070),
+              width: 1,
+            ),
             color: Colors.white,
             borderRadius: const BorderRadius.all(Radius.elliptical(5, 5)),
             boxShadow: [
