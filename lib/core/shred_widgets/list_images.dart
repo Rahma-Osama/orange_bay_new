@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
+import 'package:orange_bay_new/features/services/presentation/views/gallery_view.dart';
 
 class ListImages extends StatelessWidget {
   final Function(String) onImageTap;
@@ -14,37 +15,40 @@ class ListImages extends StatelessWidget {
         children: [
          GestureDetector(
            onTap: (){
-             onImageTap('assets/images/img5.png');
+             onImageTap('assets/images/IMG_6451.jpg');
            },
              child: Image(image: AssetImage('assets/images/img5.png'))),
           GestureDetector(
               onTap: (){
-                onImageTap('assets/images/img6.png');
+                onImageTap('assets/images/IMG_6479.jpg');
               },
-              child: Image(image: AssetImage('assets/images/img6.png'))),
+              child: Image(image: AssetImage('assets/images/IMG_6479.jpg'))),
           GestureDetector(
               onTap: (){
-                onImageTap('assets/images/img7.png');
+                onImageTap('assets/images/gallery/img.png');
               },
-              child: Image(image: AssetImage('assets/images/img7.png'))),
+              child: Image(image: AssetImage('assets/images/gallery/img.png'))),
           GestureDetector(
               onTap: (){
-                onImageTap('assets/images/img6.png');
+                onImageTap('assets/images/gallery/img_3.png');
               },
-              child: Image (image: AssetImage('assets/images/img6.png'))),
-          Container(
-            width: 62,
-            height: 64,
-            decoration: ShapeDecoration(
-              color: const Color(0xFF0F4966),
-              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Center(
-                child: Text(
-                  '+12',
-                  style: Styles.TextStyle20,
+              child: Image (image: AssetImage('assets/images/gallery/img_3.png'))),
+          GestureDetector(
+            onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>GalleryView())),
+            child: Container(
+              width: 62,
+              height: 64,
+              decoration: ShapeDecoration(
+                color: const Color(0xFF0F4966),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Center(
+                  child: Text(
+                    '+12',
+                    style: Styles.TextStyle20,
+                  ),
                 ),
               ),
             ),
