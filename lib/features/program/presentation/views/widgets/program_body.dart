@@ -13,13 +13,21 @@ import '../../../../auth/presentation/views/login_view.dart';
 import 'overview.dart';
 
 class ProBody extends StatefulWidget {
-  const ProBody({Key? key}) : super(key: key);
+  final String initialBackgroundImage;
+  const ProBody({Key? key, required this.initialBackgroundImage}) : super(key: key);
 
   @override
   State<ProBody> createState() => _ProBodyState();
 }
 
 class _ProBodyState extends State<ProBody> {
+  String selectedImage = ''; // Updated by SliderImg callback
+
+  @override
+  void initState() {
+    super.initState();
+    selectedImage = widget.initialBackgroundImage; // Initialize selectedImage with initial value
+  }
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -27,9 +35,15 @@ class _ProBodyState extends State<ProBody> {
         children: [
           Stack(
             children: [
-              BackGround(),
+              BackGround(imagePath: selectedImage),
               const AppBarButtom(),
-              SliderImg(),
+              SliderImg(
+                onImageSelected: (imagePath) {
+                  setState(() {
+                    selectedImage = imagePath; // Update selected image path
+                  });
+                },
+              ),
             ],
           ),
           Padding(

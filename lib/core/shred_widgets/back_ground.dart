@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BackGround extends StatelessWidget {
-  const BackGround({Key? key}) : super(key: key);
+  final String imagePath;
+  const BackGround({Key? key, required this.imagePath}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +10,7 @@ class BackGround extends StatelessWidget {
       height: MediaQuery.of(context).size.height/3,
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/img_1.png'),
+          image: AssetImage(imagePath),
           fit: BoxFit.cover,
         ),
       ),

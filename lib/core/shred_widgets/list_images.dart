@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
 
 class ListImages extends StatelessWidget {
-  const ListImages({Key? key}) : super(key: key);
+  final Function(String) onImageTap;
+  const ListImages({Key? key, required this.onImageTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,10 +12,26 @@ class ListImages extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-         Image(image: AssetImage('assets/images/img5.png')),
-          Image(image: AssetImage('assets/images/img6.png')),
-          Image(image: AssetImage('assets/images/img7.png')),
-          Image(image: AssetImage('assets/images/img6.png')),
+         GestureDetector(
+           onTap: (){
+             onImageTap('assets/images/img5.png');
+           },
+             child: Image(image: AssetImage('assets/images/img5.png'))),
+          GestureDetector(
+              onTap: (){
+                onImageTap('assets/images/img6.png');
+              },
+              child: Image(image: AssetImage('assets/images/img6.png'))),
+          GestureDetector(
+              onTap: (){
+                onImageTap('assets/images/img7.png');
+              },
+              child: Image(image: AssetImage('assets/images/img7.png'))),
+          GestureDetector(
+              onTap: (){
+                onImageTap('assets/images/img6.png');
+              },
+              child: Image (image: AssetImage('assets/images/img6.png'))),
           Container(
             width: 62,
             height: 64,

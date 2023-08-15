@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'back_ground.dart';
 import 'list_images.dart';
 
-class SliderImg extends StatelessWidget {
-  const SliderImg({Key? key}) : super(key: key);
+class SliderImg extends StatefulWidget {
+  final Function(String) onImageSelected;
 
+  const SliderImg({Key? key, required this.onImageSelected}) : super(key: key);
+
+  @override
+  State<SliderImg> createState() => _SliderImgState();
+}
+
+class _SliderImgState extends State<SliderImg> {
+  String selectedImage = 'assets/images/img_1.png';
+  // bool showImages = true;
   @override
   Widget build(BuildContext context) {
     // Get the screen width
@@ -36,7 +46,15 @@ class SliderImg extends StatelessWidget {
           ),
           child: Stack(
             children: [
-              ListImages(),
+              // BackGround(imagePath: selectedImage),
+              ListImages(
+                onImageTap: (imagePath) {
+                  setState(() {
+                    selectedImage = imagePath; // Update selected image path
+                  });
+                  widget.onImageSelected(imagePath); // Pass the selected image path to ProBody
+                },
+              ),
             ],
           ),
         ),

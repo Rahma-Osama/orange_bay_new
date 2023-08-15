@@ -14,13 +14,14 @@ class ProgramLayout extends StatefulWidget {
 }
 
 class _ProgramLayoutState extends State<ProgramLayout> {
+  final String initialBackgroundImage = 'assets/images/img_1.png';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey[100],
         // appBar: AppBarButtom(),
-        body: ProBody(),
+        body: ProBody(initialBackgroundImage: initialBackgroundImage),
       ),
     );
   }
