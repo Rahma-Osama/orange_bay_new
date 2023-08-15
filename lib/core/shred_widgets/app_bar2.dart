@@ -12,6 +12,7 @@ class AppBarButtom extends StatefulWidget  implements PreferredSizeWidget {
 }
 
 class _AppBarButtomState extends State<AppBarButtom> {
+  bool isFavorite = false;
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -75,16 +76,17 @@ class _AppBarButtomState extends State<AppBarButtom> {
                     ],
                   ),
                   child: IconButton(
-                    icon: const Icon(
-                      Icons.favorite_border_rounded,
+                    icon:  Icon(
+                      isFavorite
+                          ? Icons.favorite_rounded
+                          : Icons.favorite_border_rounded,
                       size: 20,
                       color: Colors.black,
-                      weight: 100.0,
                     ),
                     onPressed: () {
-                      Navigator.pop(
-                          context
-                      ); // Replace with the desired navigation action
+                      setState(() {
+                        isFavorite = !isFavorite; // Toggle the favorite state
+                      });// Replace with the desired navigation action
                     },
                   ),
                 ),
