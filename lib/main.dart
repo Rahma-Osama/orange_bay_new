@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:orange_bay_new/features/payment/presentation/views/confirm_view.dart';
 
-import 'package:orange_bay_new/features/payment/presentation/views/pay_view.dart';
 import 'package:orange_bay_new/features/splash/splash_screen1.dart';
 
-import 'features/payment/presentation/views/user_view.dart';
 
 
 
