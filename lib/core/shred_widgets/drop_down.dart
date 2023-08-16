@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 
-const List<String> list = <String>['english','العربيه'];
+const List<String> list=<String>['english','العربيه'];
 
 
 class CustomDropdownButton extends StatefulWidget {
