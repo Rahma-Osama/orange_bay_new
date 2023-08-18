@@ -15,7 +15,7 @@ class ProgramContainer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            whishScreen? SizedBox(child: Image.asset('assets/images/img_1.png',fit: BoxFit.fitWidth,)) : SizedBox(height: MediaQuery.of(context).size.height/4.5,child: Image.asset('assets/images/img_1.png',fit: BoxFit.fitWidth,)),
+            whishScreen? SizedBox(child: Image.asset('assets/images/img_1.png',fit: BoxFit.fitWidth,)) : SizedBox(height: MediaQuery.of(context).size.height/5.5,child: Image.asset('assets/images/img_1.png',fit: BoxFit.fitWidth,)),
             Padding(
               padding: EdgeInsets.only(top: MediaQuery.of(context).size.height/60,left: 8),
               child: Row(

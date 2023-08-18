@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:orange_bay_new/core/shred_widgets/app_bar.dart';
+import 'package:orange_bay_new/core/shred_widgets/new_appbar.dart';
 import 'package:orange_bay_new/features/payment/presentation/views/widgets/confirm_body.dart';
 
 class ConfirmView extends StatelessWidget {
@@ -8,7 +8,7 @@ class ConfirmView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(context: context),
+      appBar: AppBarNew(),
       body: ConfirmBody(),
     );
   }

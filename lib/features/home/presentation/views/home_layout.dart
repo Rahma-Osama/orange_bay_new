@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:orange_bay_new/core/shred_widgets/app_bar.dart';
+import 'package:orange_bay_new/core/shred_widgets/new_appbar.dart';
 
 import 'package:orange_bay_new/features/home/presentation/views/widgets/home_body.dart';
 
@@ -29,7 +30,7 @@ class _HomeLayoutState extends State<HomeLayout> {
             return SafeArea(
               child: Scaffold(
                 backgroundColor: Colors.grey[100],
-                appBar: CustomAppBar(context: context),
+                appBar: AppBarNew(),
                 bottomNavigationBar: Container(
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   decoration: BoxDecoration(

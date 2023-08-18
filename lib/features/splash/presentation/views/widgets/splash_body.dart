@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/assets.dart';
+import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
 
 
 
@@ -10,6 +11,22 @@ class SplashBody extends StatefulWidget {
 }
 
 class _SplashBodyState extends State<SplashBody> {
+  @override
+  void initState() {
+    super.initState();
+    // Call the function to navigate after 3 seconds
+    navigateToNextScreen();
+  }
+
+  // Function to navigate to the next screen
+  void navigateToNextScreen() {
+    Future.delayed(const Duration(seconds: 6), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => HomeLayout()), // Replace with the appropriate screen
+      );
+    });
+  }
 
 
   @override
@@ -19,7 +36,7 @@ class _SplashBodyState extends State<SplashBody> {
           SizedBox(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            child: Image.asset('assets/images/IMG_6497.jpg', fit: BoxFit.cover),
+            child: Image.asset('assets/images/IMG_6497-_11_.png', fit: BoxFit.cover),
           ),
           Column(
             children: <Widget>[
