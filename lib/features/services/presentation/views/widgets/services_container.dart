@@ -38,15 +38,17 @@ final index;
     );
   }
 
-  List servicesHeaders=['Restaurants','Activities','Videos','Photos','Memberships','Shops'];
-  List servicesData=['12 Restaurants','8 Activities','10 Videos','40 Photos','6 Memberships','35 Shops'];
+  List servicesHeaders=['Restaurants','Activities','Videos','Photos'];
+   // List servicesHeaders=['Restaurants','Activities','Videos','Photos','Memberships','Shops'];
+  List servicesData=['12 Restaurants','8 Activities','10 Videos','40 Photos'];
+   // List servicesData=['12 Restaurants','8 Activities','10 Videos','40 Photos','6 Memberships','35 Shops'];
   List screens=[
     const RestLayout(),
     const ActivityView(),
     const VideosView(),
     const GalleryView(),
-    const MemberShipView(),
-    const shopView()
+    // const MemberShipView(),
+    // const shopView()
 
   ];
 

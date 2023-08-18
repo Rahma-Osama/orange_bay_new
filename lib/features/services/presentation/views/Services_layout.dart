@@ -8,7 +8,7 @@ class ServicesLayout extends StatelessWidget {
      return Padding(
        padding: const EdgeInsets.all(16.0),
        child: GridView.builder(
-           itemCount: 6,
+           itemCount: 4,
            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
              mainAxisSpacing: MediaQuery.of(context).size.height/40,
              crossAxisSpacing: MediaQuery.of(context).size.height/40,
