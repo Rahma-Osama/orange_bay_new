@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
 
-import 'package:orange_bay_new/features/splash/splash_screen1.dart';
+import 'features/splash/presentation/views/splash_view.dart';
+
+
 
 
 
@@ -13,7 +16,7 @@ class myApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );

@@ -11,7 +11,7 @@ class ActivitiesContainr extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        width: MediaQuery.of(context).size.width*.6,
+        // width: MediaQuery.of(context).size.width*.6,
         decoration: BoxDecoration(color: Colors.white,borderRadius: BorderRadius.circular(10)),
         clipBehavior: Clip.antiAliasWithSaveLayer,
         child: Column(

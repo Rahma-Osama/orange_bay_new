@@ -76,24 +76,24 @@
 //     );
 //   }
 //   }
-
-import 'package:flutter/material.dart';
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
-import 'package:page_transition/page_transition.dart';
-
-class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedSplashScreen(
-      splash: 'assets/images/img.png',
-      nextScreen: HomeLayout(),
-      splashTransition: SplashTransition.rotationTransition,
-      pageTransitionType: PageTransitionType.rightToLeftWithFade,
-    );
-  }
-}
+//
+// import 'package:flutter/material.dart';
+// import 'package:animated_splash_screen/animated_splash_screen.dart';
+// import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
+// import 'package:page_transition/page_transition.dart';
+//
+// class SplashScreen extends StatelessWidget {
+//   const SplashScreen({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return AnimatedSplashScreen(
+//       splash: 'assets/images/img.png',
+//       nextScreen: HomeLayout(),
+//       splashTransition: SplashTransition.rotationTransition,
+//       pageTransitionType: PageTransitionType.rightToLeftWithFade,
+//     );
+//   }
+// }
 
 

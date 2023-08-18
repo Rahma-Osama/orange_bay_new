@@ -11,6 +11,7 @@ class restBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+      physics: BouncingScrollPhysics(),
       itemBuilder: (context, index) => RestContainer(
         index: index,
       ),

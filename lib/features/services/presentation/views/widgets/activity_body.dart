@@ -13,6 +13,7 @@ class _ActivityBodyState extends State<ActivityBody> {
   @override
   Widget build(BuildContext context) {
     return  GridView.builder(
+        physics: BouncingScrollPhysics(),
         itemCount: 6,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           mainAxisSpacing: MediaQuery.of(context).size.height/40,

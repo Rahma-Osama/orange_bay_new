@@ -21,6 +21,7 @@ class _GalleryBodyState extends State<GalleryBody> {
             height: 60,
             padding: EdgeInsets.all(8),
             child: ListView.builder(
+                physics: const BouncingScrollPhysics(),
                 itemCount: 3,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) => GestureDetector(

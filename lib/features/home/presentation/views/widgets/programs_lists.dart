@@ -10,6 +10,7 @@ class Programs extends StatelessWidget {
     return SizedBox(
         height: MediaQuery.of(context).size.height * .37,
         child: ListView.builder(
+          physics: BouncingScrollPhysics(),
           itemCount: 3,
           itemBuilder: (context, index) => GestureDetector(
               onTap: () => Navigator.push(context,
