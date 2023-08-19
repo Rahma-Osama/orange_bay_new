@@ -12,13 +12,16 @@ class ActivityBody extends StatefulWidget {
 class _ActivityBodyState extends State<ActivityBody> {
   @override
   Widget build(BuildContext context) {
-    return  GridView.builder(
-        physics: BouncingScrollPhysics(),
-        itemCount: 6,
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisSpacing: MediaQuery.of(context).size.height/40,
-          crossAxisSpacing: MediaQuery.of(context).size.height/40,
-          childAspectRatio: .9,
-          crossAxisCount: 2,), itemBuilder: (context,index)=>ActivityItem(index: index%3,));
+    return  Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: GridView.builder(
+          physics: BouncingScrollPhysics(),
+          itemCount: 6,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            mainAxisSpacing: MediaQuery.of(context).size.height/40,
+            crossAxisSpacing: MediaQuery.of(context).size.height/40,
+            childAspectRatio: .9,
+            crossAxisCount: 2,), itemBuilder: (context,index)=>ActivityItem(index: index%3,)),
+    );
   }
 }

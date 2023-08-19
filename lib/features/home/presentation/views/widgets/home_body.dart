@@ -6,6 +6,8 @@ import 'package:orange_bay_new/features/home/presentation/views/widgets/activiti
 import 'package:orange_bay_new/features/home/presentation/views/widgets/pick_date.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/programs_lists.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/search_buttom.dart';
+import 'package:orange_bay_new/features/services/presentation/views/activity_view.dart';
+import 'package:page_transition/page_transition.dart';
 
 
 List<String> list = <String>['ُEG','Dollar'];
@@ -85,7 +87,12 @@ class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin
                     padding: const EdgeInsets.all(8.0),
                     child: Text("Today Activities",style: Styles.TextStyle14,),
                   ),
-                  GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context,PageTransition(child: ActivityView(),
+                          type: PageTransitionType.topToBottom,duration: Duration(seconds: 2)));
+                    },
+                    child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
                 ],
               ),
               Activities()

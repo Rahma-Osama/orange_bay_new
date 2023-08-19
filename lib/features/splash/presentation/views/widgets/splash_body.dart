@@ -70,7 +70,7 @@ class _SplashBodyState extends State<SplashBody> with SingleTickerProviderStateM
           child: SizedBox(
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
-            child: Image.asset('assets/images/IMG_6497-_11_.png', fit: BoxFit.cover),
+            child: Image.asset('assets/images/IMG_6497-_1_ (1) (2) (1) (1) (1).jpg', fit: BoxFit.cover),
           ),
         ),
         Column(

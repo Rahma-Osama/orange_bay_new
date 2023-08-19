@@ -72,7 +72,10 @@ class _AppBarNewState extends State<AppBarNew> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-                padding: EdgeInsets.all(MediaQuery.of(context).size.width / 60),
+              padding: EdgeInsets.symmetric(
+                horizontal: MediaQuery.of(context).size.width / 60,
+                vertical: 0, // Adjust this value to align vertically as needed
+              ),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(

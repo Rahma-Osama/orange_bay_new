@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/utilities/widgets/animation.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/program_container.dart';
 import 'package:orange_bay_new/features/program/presentation/views/program_layout.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Programs extends StatefulWidget {
   final AnimationController animationController;
@@ -48,8 +49,15 @@ class _ProgramsState extends State<Programs>  with TickerProviderStateMixin{
              animationController?.forward();
              return GestureDetector(
              onTap: () =>
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProgramLayout())),
+//                  Navigator.push(context,
+//                      PageTransition(child: ProgramLayout(),
+//                          type: PageTransitionType.topToBottom,duration: Duration(seconds: 1))
+//
+// /////
+//                  );
+              Navigator.push(context,
+                     PageTransition(child: ProgramLayout(),
+                         type: PageTransitionType.rightToLeftWithFade,duration: Duration(seconds: 1))),
               child: ProgramContainer(
                 animation: animation,
                 animationController: animationController!,
