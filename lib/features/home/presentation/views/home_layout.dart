@@ -9,20 +9,36 @@ import '../../../../core/shred_widgets/bottom_nav_bar.dart';
 import '../view_model/cubit/layout_cubit.dart';
 import '../view_model/cubit/layout_states.dart';
 
-class HomeLayout extends StatefulWidget {
+class HomeLayout extends StatefulWidget  {
   const HomeLayout({Key? key}) : super(key: key);
 
   @override
   State<HomeLayout> createState() => _HomeLayoutState();
 }
 
-class _HomeLayoutState extends State<HomeLayout> {
+class _HomeLayoutState extends State<HomeLayout> with TickerProviderStateMixin {
+  late LayoutCubit _layoutCubit;
+  late AnimationController _animationController;
+  @override
+  void initState() {
+    super.initState();
+    _layoutCubit = LayoutCubit(vsync: this); // Pass vsync to LayoutCubit
+    WidgetsBinding.instance!.addPostFrameCallback((_) {
+      // _layoutCubit._startLoadScreen();
+    });
+  }
+
+  @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
           BlocProvider(
-            create: (ctx) => LayoutCubit(),
+            create: (ctx) => LayoutCubit(vsync: this),
           ),
         ],
         child: BlocConsumer<LayoutCubit, LayoutStates>(

@@ -24,8 +24,8 @@ class _SliderImgState extends State<SliderImg> {
     double leftPosition = screenWidth >= 600 ? 225 : 20;
 
     // Calculate the top position based on screen width
-    double topPosition = screenWidth >= 600 ? 300 : 150;
-
+    double topPosition = screenWidth >= 600 ? 300 : 130;
+//150
     // Calculate the container width based on screen width
     double containerWidth = screenWidth >= 600 ? 400 : screenWidth - 40;
 

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'activities_container.dart';
-class Activities extends StatelessWidget {
+class Activities extends StatefulWidget {
   const Activities({Key? key}) : super(key: key);
 
+
+  @override
+  State<Activities> createState() => _ActivitiesState();
+}
+
+class _ActivitiesState extends State<Activities> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -15,5 +21,4 @@ class Activities extends StatelessWidget {
           scrollDirection: Axis.horizontal,
         ));
   }
-
 }

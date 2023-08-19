@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/styles.dart';
+import 'package:orange_bay_new/core/utilities/widgets/animation.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/activities_list.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/pick_date.dart';
 import 'package:orange_bay_new/features/home/presentation/views/widgets/programs_lists.dart';
@@ -9,18 +10,31 @@ import 'package:orange_bay_new/features/home/presentation/views/widgets/search_b
 
 List<String> list = <String>['ُEG','Dollar'];
 class HomeBody extends StatefulWidget {
-   HomeBody({Key? key}) : super(key: key);
-   String dropdownValue = list.first;
+  final AnimationController animationController;
+   HomeBody({Key? key, required this.animationController}) : super(key: key);
+   // String dropdownValue = list.first;
 
   @override
   State<HomeBody> createState() => _HomeBodyState();
 }
 
-class _HomeBodyState extends State<HomeBody> {
+class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin {
+  late ScrollController controller;
+  late AnimationController _animationController;
+  void initState() {
+    _animationController = AnimationController(duration: Duration(milliseconds: 0), vsync: this);
+    widget.animationController.forward();
+    controller = ScrollController(initialScrollOffset: 0.0);
+    controller
+      ..addListener(() {
+      });
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: SingleChildScrollView(
+    return SingleChildScrollView(
+      child: BottomTopMoveAnimationView(
+        animationController: widget.animationController,
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
@@ -61,7 +75,9 @@ class _HomeBodyState extends State<HomeBody> {
                   GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
                 ],
               ),
-              Programs(),
+              Programs(
+                animationController: widget.animationController,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

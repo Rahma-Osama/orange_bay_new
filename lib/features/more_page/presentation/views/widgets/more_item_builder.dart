@@ -30,6 +30,6 @@ class MoreItemBuilder extends StatelessWidget {
   List headers=["My PROFILE","My WISHLIST","About Us","Contact US","Logout"];
   List screens=[
     ProfileView(),
-    WishListView(),
+    // WishListView(),
   ];
 }
