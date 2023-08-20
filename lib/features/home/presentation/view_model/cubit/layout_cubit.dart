@@ -40,7 +40,9 @@ class LayoutCubit extends Cubit<LayoutStates>  {
    ),
     BookBody(),
     ServicesLayout(),
-    MoreView(),
+    MoreView(
+      animationController: _animationController,
+    ),
 
   ];
 }

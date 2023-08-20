@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:orange_bay_new/core/shred_widgets/custom_button.dart';
+import 'package:orange_bay_new/features/booking_history/presentation/views/widgets/upcomingButton.dart';
 
 
 import '../../../../../constants.dart';
@@ -34,29 +35,12 @@ class UpcomingBody extends StatelessWidget {
              Padding(
                padding: const EdgeInsets.all(8.0),
                child: Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                  children: [
-                   Expanded(
-                     child: CustomButton(
-                       backgroundColor: MAIN_ORANGE,
-                       text: 'Edit',
-                       func: (){},
-                     ),
-                   ),
-                   Expanded(
-                     child: CustomButton(
-                       backgroundColor: Colors.white,
-                       textColor: MAIN_ORANGE,
-                       text: 'Print',
-                       func: (){},
-                     ),
-                   ),
-                   Expanded(
-                     child: CustomButton(
-                       backgroundColor: const Color(0xFFE72C2C),
-                       text: 'Cancel',
-                       func: (){},
-                     ),
-                   ),
+                   upcomingButton(label: "Edit",bgcolor:  MAIN_ORANGE,borderColor: MAIN_ORANGE,txtcolor: Colors.white, context: context),
+                   upcomingButton(label: "Print",bgcolor: Colors.white,borderColor: MAIN_ORANGE,txtcolor: MAIN_ORANGE, context: context),
+                   upcomingButton(label: "Cancel",bgcolor: Color(0xFFE72C2C),borderColor: Color(0xFFE72C2C),txtcolor: Colors.white, context: context),
+
                  ],
                ),
              ),

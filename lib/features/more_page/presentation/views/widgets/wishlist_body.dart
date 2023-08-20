@@ -14,60 +14,46 @@ class WishListBody extends StatefulWidget {
 
 class _WishListBodyState extends State<WishListBody> with TickerProviderStateMixin {
   AnimationController? animationController;
-  @override
-  void initState() {
-    animationController = AnimationController(
-        duration: Duration(milliseconds: 1000), vsync: this);
-    super.initState();
-  }
 
   @override
-  void dispose() {
-    animationController?.dispose();
-    super.dispose();
+  void initState() {
+    widget.animationController.forward();
+    super.initState();
   }
   @override
-  // void initState() {
-  //   widget.animationController.forward();
-  //   super.initState();
-  // }
-  @override
   Widget build(BuildContext context) {
-    return BottomTopMoveAnimationView(
-      animationController: animationController!,
-      child: Padding(
-        padding: const EdgeInsets.all(6.0),
-        child: ListView.builder(
-          itemBuilder: (context, index) {
-            var count = 3;
-            var animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-                parent: widget.animationController,
-                curve: Interval((1 / count) * index, 1.0,
-                    curve: Curves.fastOutSlowIn)));
-            widget.animationController.forward();
-            return  Stack(
-                children: [
-                  ProgramContainer(
-                    animation: animation,
-                    whishScreen: true,
-                    animationController: widget.animationController,
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(MediaQuery.of(context).size.width / 20),
-                    child: Align(
-                        alignment: Alignment.topRight,
-                        child: CircleAvatar(
-                            backgroundColor: Colors.white,
-                            child: Icon(
-                              Icons.favorite,
-                              color: Colors.red,
-                            ))),
-                  )
-                ],
-            );
-          },
-          itemCount: 10,
-        ),
+    return Padding(
+      padding: const EdgeInsets.all(6.0),
+      child: ListView.builder(
+        itemBuilder: (context, index) {
+          var count = 3;
+          var animation = Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
+              parent: widget.animationController,
+              curve: Interval((1 / count) * index, 1.0,
+                  curve: Curves.fastOutSlowIn)));
+          widget.animationController.forward();
+          return  Stack(
+              children: [
+                ProgramContainer(
+                  animation: animation,
+                  whishScreen: true,
+                  animationController: widget.animationController,
+                ),
+                Padding(
+                  padding: EdgeInsets.all(MediaQuery.of(context).size.width / 20),
+                  child: Align(
+                      alignment: Alignment.topRight,
+                      child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(
+                            Icons.favorite,
+                            color: Colors.red,
+                          ))),
+                )
+              ],
+          );
+        },
+        itemCount: 10,
       ),
     );
   }

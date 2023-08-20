@@ -5,7 +5,8 @@ import 'package:orange_bay_new/features/more_page/presentation/views/profile_vie
 import '../wishlist_view.dart';
 class MoreItemBuilder extends StatefulWidget {
   final index;
-   MoreItemBuilder({Key? key,required this.index}) : super(key: key);
+  final AnimationController animationController;
+   MoreItemBuilder({Key? key,required this.index, required this.animationController}) : super(key: key);
 
   @override
   State<MoreItemBuilder> createState() => _MoreItemBuilderState();
