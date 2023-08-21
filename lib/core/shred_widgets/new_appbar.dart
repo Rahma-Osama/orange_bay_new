@@ -35,6 +35,8 @@ class _AppBarNewState extends State<AppBarNew> {
             child: Image.asset(
               AssetData.logo,
               height: MediaQuery.of(context).size.height / 20,
+              width: MediaQuery.of(context).size.width / 4,
+
             ),
           ),
           Padding(

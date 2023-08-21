@@ -46,7 +46,7 @@ class _HomeLayoutState extends State<HomeLayout> with TickerProviderStateMixin {
             return SafeArea(
               child: Scaffold(
                 backgroundColor: Colors.grey[100],
-                appBar: CustomAppBar(context: context),
+                appBar:  AppBarNew(),
                 bottomNavigationBar: Container(
                   clipBehavior: Clip.antiAliasWithSaveLayer,
                   decoration: BoxDecoration(

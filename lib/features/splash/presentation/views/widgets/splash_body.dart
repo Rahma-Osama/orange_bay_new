@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:orange_bay_new/constants.dart';
 import 'package:orange_bay_new/core/utilities/assets.dart';
 import 'package:orange_bay_new/features/home/presentation/views/home_layout.dart';
+import 'package:orange_bay_new/features/onboarding/onboarding.dart';
 
 
 
@@ -152,7 +153,7 @@ class _SplashBodyState extends State<SplashBody> {
     Future.delayed(const Duration(seconds: 6), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomeLayout()), // Replace with the appropriate screen
+        MaterialPageRoute(builder: (context) => OnBoarding()), // Replace with the appropriate screen
       );
     });
   }
