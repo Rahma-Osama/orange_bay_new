@@ -38,7 +38,7 @@ class _PickDateState extends State<PickDate> {
             }
           },
           decoration:  InputDecoration(
-            hintText: 'Pick a Date',
+            hintText: 'when would you come?',
             prefixIcon: Icon(Icons.calendar_today_rounded),
             enabledBorder: OutlineInputBorder(
               borderSide: BorderSide.none,

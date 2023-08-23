@@ -9,6 +9,8 @@ import 'package:orange_bay_new/features/home/presentation/views/widgets/search_b
 import 'package:orange_bay_new/features/services/presentation/views/activity_view.dart';
 import 'package:page_transition/page_transition.dart';
 
+import 'item_builder.dart';
+
 
 List<String> list = <String>['ُEG','Dollar'];
 class HomeBody extends StatefulWidget {
@@ -40,6 +42,7 @@ class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Row(
               //   mainAxisAlignment: MainAxisAlignment.end,
@@ -78,35 +81,50 @@ class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin
               // ),
               PickDate(),
               Search(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
-                    child: Text("Top Programs in Orange Bay",style: Styles.TextStyle14,),
-                  ),
-                  GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                child: Text("Our Programs",style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20
+                ),),
               ),
+              // SizedBox(
+              //     height: MediaQuery.of(context).size.height * .5,
+                  // child: ListView.builder(
+                  //     itemCount: 10,
+                  //     scrollDirection: Axis.horizontal,
+                  //     itemBuilder: (context, index) => ItemBuilder(
+                  //       animationController: widget.animationController,
+                  //     )))
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Padding(
+              //       padding: const EdgeInsets.symmetric(vertical: 16.0),
+              //       child: Text("Top Programs in Orange Bay",style: Styles.TextStyle14,),
+              //     ),
+              //     GestureDetector(child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
+              //   ],
+              // ),
               Programs(
                 animationController: widget.animationController,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Today Activities",style: Styles.TextStyle14,),
-                  ),
-                  GestureDetector(
-                    onTap: (){
-                      Navigator.push(context,PageTransition(child: ActivityView(),
-                          type: PageTransitionType.topToBottom,duration: Duration(seconds: 2)));
-                    },
-                    child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
-                ],
-              ),
-              Activities()
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     Padding(
+              //       padding: const EdgeInsets.all(8.0),
+              //       child: Text("Today Activities",style: Styles.TextStyle14,),
+              //     ),
+              //     GestureDetector(
+              //       onTap: (){
+              //         Navigator.push(context,PageTransition(child: ActivityView(),
+              //             type: PageTransitionType.topToBottom,duration: Duration(seconds: 2)));
+              //       },
+              //       child: Text("See all",style: TextStyle(color: MAIN_ORANGE),),)
+              //   ],
+              // ),
+              // Activities()
 
             ],
           ),

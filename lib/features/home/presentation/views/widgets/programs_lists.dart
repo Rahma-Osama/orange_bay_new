@@ -31,16 +31,15 @@ class _ProgramsState extends State<Programs>  with TickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     return BottomTopMoveAnimationView(
-
       animationController: animationController!,
       child: SizedBox(
-          height: MediaQuery.of(context).size.height * .37,
+          height: MediaQuery.of(context).size.height * .5,
           child: ListView.builder(
             physics: BouncingScrollPhysics(),
               scrollDirection:Axis.horizontal,
-            itemCount: 3,
+            itemCount: 10,
             itemBuilder: (context, index) {
-              var count =  3;
+              var count =  10;
             var animation = Tween(begin: 0.0, end: 1.0).animate(
              CurvedAnimation(
             parent: animationController!,

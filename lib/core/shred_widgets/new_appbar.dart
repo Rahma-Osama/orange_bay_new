@@ -28,7 +28,7 @@ class _AppBarNewState extends State<AppBarNew> {
       elevation: 0,
       flexibleSpace:
       Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
             padding: const EdgeInsets.only(top: 8.0 , left: 8.0),
@@ -39,6 +39,7 @@ class _AppBarNewState extends State<AppBarNew> {
 
             ),
           ),
+          SizedBox(width: MediaQuery.of(context).size.width/12,),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(

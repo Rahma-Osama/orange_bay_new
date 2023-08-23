@@ -196,7 +196,7 @@ class _SplashBodyState extends State<SplashBody> {
                     child: const Text(
                       "Welcome to Orange Bay",
                       textAlign: TextAlign.left,
-                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                      style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700,color: Colors.white),
                     ),
                   ),
                   const SizedBox(
@@ -208,7 +208,7 @@ class _SplashBodyState extends State<SplashBody> {
                     child: Text(
                         ("Planning your next journey with us "),
                         textAlign: TextAlign.left,
-                        style: TextStyle(fontSize: 16,color: MAIN_ORANGE , fontWeight: FontWeight.w800,shadows: [
+                        style: TextStyle(fontSize: 16,color: Colors.white , fontWeight: FontWeight.w800,shadows: [
                           Shadow(color: Colors.grey,
                             offset: Offset(.5,.5)
                           )
