@@ -35,22 +35,22 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  salomon_bottom_bar: ^3.3.2
-  bloc: ^8.1.2
+  salomon_bottom_bar:
+  bloc:
   syncfusion_flutter_datepicker:
-  timelines: ^0.1.0
+  timelines:
   animated_text_kit:
-  timeline_list: ^0.0.6
-  flutter_rating_bar: ^4.0.1
+  timeline_list:
+  flutter_rating_bar:
   flutter_bloc:
-  flutter_screenutil: ^5.8.4
-  im_stepper: ^1.0.1+1
-  animated_splash_screen: ^1.3.0
-  simple_animations: ^4.2.0
-  page_transition: ^2.0.9
-  supercharged: ^2.1.1
-  wave_transition: ^0.0.6
-  flutter_launcher_icons: ^0.13.1
+  flutter_screenutil:
+  im_stepper:
+  animated_splash_screen:
+  page_transition:
+  supercharged:
+  wave_transition:
+  flutter_launcher_icons:
+
 
 flutter_launcher_icons:
   android: true

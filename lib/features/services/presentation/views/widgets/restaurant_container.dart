@@ -23,7 +23,7 @@ class RestContainer extends StatelessWidget {
           children: [
             Image.asset(AssetData.restaurants[index],fit: BoxFit.cover,width: double.infinity,),
             Container(
-              margin: EdgeInsets.all(8),
+              margin: const EdgeInsets.all(8),
               child: Column(
                 children: [
                   Row(
@@ -58,13 +58,13 @@ class RestContainer extends StatelessWidget {
                   Row(
                     children: [
                       Icon(Icons.access_time_filled,color: Blue,),
-                      Text('12:00 PM'),
+                      const Text('12:00 PM'),
                       SizedBox(width: MediaQuery.of(context).size.width/10,),
                       Icon(Icons.arrow_forward,color: Blue,),
-                      Text('3:00 PM'),
+                      const Text('3:00 PM'),
                       SizedBox(width: MediaQuery.of(context).size.width/10,),
                       Icon(Icons.restaurant,color: MAIN_ORANGE,),
-                      Text('3:00 PM'),
+                      const Text('3:00 PM'),
 
                     ],
                   ),
@@ -78,12 +78,12 @@ class RestContainer extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Start for 150.66 EGP / Person",style: TextStyle(
+                      const Text("Start for 150.66 EGP / Person",style: TextStyle(
                           color: Color(0xFF333333),
                           fontWeight: FontWeight.w500,
                           fontSize: 14
                       ),),
-                      Text("[Map]",style: Styles.TextStyle14.copyWith(color: Color(0XFF007489),fontWeight: FontWeight.w400,))
+                      Text("[Map]",style: Styles.TextStyle14.copyWith(color: const Color(0XFF007489),fontWeight: FontWeight.w400,))
                     ],
                   )
 

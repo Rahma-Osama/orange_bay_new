@@ -21,7 +21,7 @@ class OnBoarding extends StatelessWidget {
               child: RichText(
                 text: TextSpan(
                   children: [
-                    TextSpan(
+                    const TextSpan(
                       text: "Explore\n",
                       style: TextStyle(
                         // color: ColorConstant.bluegray900,
@@ -31,7 +31,7 @@ class OnBoarding extends StatelessWidget {
                         height: 1.32,
                       ),
                     ),
-                    TextSpan(
+                    const TextSpan(
                       text: "The Beautiful\n",
                       style: TextStyle(
                         // color: ColorConstant.gray900,
@@ -77,9 +77,9 @@ class OnBoarding extends StatelessWidget {
                   padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height/4,right: MediaQuery.of(context).size.width/4),
 
                   child:GestureDetector(
-                    onTap: ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeLayout())),
+                    onTap: ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const HomeLayout())),
                     child: Container(decoration: BoxDecoration(color: MAIN_ORANGE,borderRadius: BorderRadius.circular(40)),
-                      child: Icon(Icons.arrow_right_alt_outlined,color: Colors.white,size: 40,),
+                      child: const Icon(Icons.keyboard_arrow_right_outlined,color: Colors.white,size: 30,),
                     ),
                   )
               ))

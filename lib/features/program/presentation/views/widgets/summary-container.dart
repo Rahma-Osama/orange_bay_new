@@ -26,7 +26,7 @@ class SummaryContainer extends StatelessWidget {
                 'Summary',
               style: Styles.TextStyle16.copyWith(fontWeight: FontWeight.w600 , color: Colors.black),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
@@ -56,9 +56,9 @@ class SummaryContainer extends StatelessWidget {
                   ),
                 ],
             ),
-            SizedBox(height: 5,),
-            Divider(),
-            SizedBox(height: 15,),
+            const SizedBox(height: 5,),
+            const Divider(),
+            const SizedBox(height: 15,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

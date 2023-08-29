@@ -13,7 +13,7 @@ class ProfileView extends StatelessWidget {
       child:  Scaffold(
         backgroundColor: Colors.grey[100],
         appBar: const AppBarButtom3(text: 'My Profile',),
-        body: HeaderText(),
+        body: const HeaderText(),
       ),
     );
   }

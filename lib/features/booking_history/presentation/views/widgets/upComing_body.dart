@@ -39,7 +39,7 @@ class UpcomingBody extends StatelessWidget {
                  children: [
                    upcomingButton(label: "Edit",bgcolor:  MAIN_ORANGE,borderColor: MAIN_ORANGE,txtcolor: Colors.white, context: context),
                    upcomingButton(label: "Print",bgcolor: Colors.white,borderColor: MAIN_ORANGE,txtcolor: MAIN_ORANGE, context: context),
-                   upcomingButton(label: "Cancel",bgcolor: Color(0xFFE72C2C),borderColor: Color(0xFFE72C2C),txtcolor: Colors.white, context: context),
+                   upcomingButton(label: "Cancel",bgcolor: const Color(0xFFE72C2C),borderColor: const Color(0xFFE72C2C),txtcolor: Colors.white, context: context),
 
                  ],
                ),

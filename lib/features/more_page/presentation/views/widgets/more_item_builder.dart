@@ -6,7 +6,7 @@ import '../wishlist_view.dart';
 class MoreItemBuilder extends StatefulWidget {
   final index;
   final AnimationController animationController;
-   MoreItemBuilder({Key? key,required this.index, required this.animationController}) : super(key: key);
+   const MoreItemBuilder({Key? key,required this.index, required this.animationController}) : super(key: key);
 
   @override
   State<MoreItemBuilder> createState() => _MoreItemBuilderState();

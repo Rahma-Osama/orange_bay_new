@@ -54,7 +54,7 @@ class _HomeLayoutState extends State<HomeLayout> with TickerProviderStateMixin {
                           MediaQuery.of(context).size.width / 40)),
                   margin:
                       EdgeInsets.all(MediaQuery.of(context).size.width / 20),
-                  child: BottomNavBar(),
+                  child: const BottomNavBar(),
                 ),
                 body: BlocProvider.of<LayoutCubit>(context).screens[
                     BlocProvider.of<LayoutCubit>(context).bottomNavBarIndex],

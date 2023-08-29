@@ -19,8 +19,8 @@ class _BookBodyState extends State<BookBody> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SecondContainer(),
-          SummaryContainer(),
+          const SecondContainer(),
+          const SummaryContainer(),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: CustomButton(

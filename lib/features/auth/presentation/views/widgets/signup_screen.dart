@@ -98,7 +98,7 @@ class _SignupScreenState extends State<SignupScreen> {
                   controller: passwordController,
                   decoration: InputDecoration(
                     labelText: 'Password',
-                    prefixIcon: Icon(Icons.lock,),
+                    prefixIcon: const Icon(Icons.lock,),
                     suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -109,7 +109,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         isPasswordVisible ? Icons.visibility : Icons.visibility_off,
                       ),
                     ),
-                    border: OutlineInputBorder(),
+                    border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.visiblePassword,
                   onFieldSubmitted: (value){
@@ -130,7 +130,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginView(),
+                          builder: (context) => const LoginView(),
                         ),
                       );
                     },

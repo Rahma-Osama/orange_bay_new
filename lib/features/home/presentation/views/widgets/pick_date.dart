@@ -21,33 +21,37 @@ class _PickDateState extends State<PickDate> {
           color: Colors.white,
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         ),
-        child: TextField(
-          controller: _fromDateController,
-          onTap: () async {
-            DateTime? pickedDate = await showDatePicker(
-              context: context,
-              initialDate: DateTime.now(),
-              firstDate: DateTime(2000),
-              lastDate: DateTime(2070),
-            );
-            if (pickedDate != null) {
-              setState(() {
-                _fromDateController.text =
-                    DateFormat('yyyy/MM/dd').format(pickedDate);
-              });
-            }
-          },
-          decoration:  InputDecoration(
-            hintText: 'when would you come?',
-            prefixIcon: Icon(Icons.calendar_today_rounded),
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide.none,
+        child: Center(
+          child: TextField(
+            controller: _fromDateController,
+            onTap: () async {
+              DateTime? pickedDate = await showDatePicker(
+                context: context,
+                initialDate: DateTime.now(),
+                firstDate: DateTime(2000),
+                lastDate: DateTime(2070),
+              );
+              if (pickedDate != null) {
+                setState(() {
+                  _fromDateController.text =
+                      DateFormat('yyyy/MM/dd').format(pickedDate);
+                });
+              }
+            },
+            decoration:  InputDecoration(
+              hintText: 'when would you come?',
+
+              prefixIcon: const Icon(Icons.calendar_today_rounded),
+              enabledBorder: const OutlineInputBorder(
+                borderSide: BorderSide.none,
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: MAIN_ORANGE),
+              ),
+              contentPadding: const EdgeInsets.symmetric(
+                  vertical: 0, horizontal: 16),
+
             ),
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: MAIN_ORANGE),
-            ),
-            contentPadding: EdgeInsets.symmetric(
-                vertical: 10, horizontal: 16),
           ),
         ),
       ),

@@ -16,7 +16,7 @@ class _WishListViewState extends State<WishListView> with TickerProviderStateMix
   @override
   void initState() {
     tabAnimationController =
-        AnimationController(duration: Duration(milliseconds: 400), vsync: this);
+        AnimationController(duration: const Duration(milliseconds: 400), vsync: this);
     tabAnimationController..forward();
     widget.animationController.forward();
 

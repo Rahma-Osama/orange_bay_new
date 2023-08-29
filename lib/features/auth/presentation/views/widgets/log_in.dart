@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return
       Padding(
-        padding:  EdgeInsets.all(20.0), //this number is standard at all at will make padding to make it in center
+        padding:  const EdgeInsets.all(20.0), //this number is standard at all at will make padding to make it in center
         child: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -52,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   controller: passwordController,
                   decoration: InputDecoration(
                     labelText: 'Password',
-                    prefixIcon: Icon(Icons.lock,),
+                    prefixIcon: const Icon(Icons.lock,),
                     suffixIcon: IconButton(
                       onPressed: () {
                         setState(() {
@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         isPasswordVisible ? Icons.visibility : Icons.visibility_off,
                       ),
                     ),
-                    border: OutlineInputBorder(),
+                    border: const OutlineInputBorder(),
                   ),
                   keyboardType: TextInputType.visiblePassword,
                   onFieldSubmitted: (value){
@@ -76,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                  Container(
                    alignment: Alignment.centerRight,
-                   child: Text(
+                   child: const Text(
                     // textAlign: TextAlign.right ,
                       'FORGET PASSWORD?',
                     style: TextStyle(color: Colors.black,fontWeight: FontWeight.w300

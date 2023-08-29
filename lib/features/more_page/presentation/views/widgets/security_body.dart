@@ -18,7 +18,7 @@ class _SecurityBodyState extends State<SecurityBody> {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(10.0),
       child: Column(
         children: [
           ContainerProfile(
@@ -32,7 +32,7 @@ class _SecurityBodyState extends State<SecurityBody> {
             },
             isObscure: !isPasswordVisible2,
           ),
-          Divider(),
+          const Divider(),
           ContainerProfile(
             type: TextInputType.text,
             text: 'New Password',

@@ -21,7 +21,7 @@ class _LoginViewState extends State<LoginView> {
     return SafeArea(
       child: Scaffold(
         appBar: CustomAppBar(context: context) ,
-        body: LogInBody(),
+        body: const LogInBody(),
       ),
     );
   }

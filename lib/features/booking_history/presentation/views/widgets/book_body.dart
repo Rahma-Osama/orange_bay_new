@@ -55,7 +55,7 @@ class _BookBodyState extends State<BookBody> {
                   )),
             ),
             bookText[0]
-                ?  PastBody()
+                ?  const PastBody()
                 : bookText[1]
                 ? const UpcomingBody()
                 : const SizedBox(),

@@ -9,7 +9,7 @@ class ListImages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding: EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -17,24 +17,24 @@ class ListImages extends StatelessWidget {
            onTap: (){
              onImageTap('assets/images/IMG_6451.jpg');
            },
-             child: Image(image: AssetImage('assets/images/img5.png'))),
+             child: const Image(image: AssetImage('assets/images/img5.png'))),
           GestureDetector(
               onTap: (){
                 onImageTap('assets/images/IMG_6479.jpg');
               },
-              child: Image(image: AssetImage('assets/images/IMG_6479.jpg'))),
+              child: const Image(image: AssetImage('assets/images/IMG_6479.jpg'))),
           GestureDetector(
               onTap: (){
                 onImageTap('assets/images/gallery/img.png');
               },
-              child: Image(image: AssetImage('assets/images/gallery/img.png'))),
+              child: const Image(image: AssetImage('assets/images/gallery/img.png'))),
           GestureDetector(
               onTap: (){
                 onImageTap('assets/images/gallery/img_3.png');
               },
-              child: Image (image: AssetImage('assets/images/gallery/img_3.png'))),
+              child: const Image (image: AssetImage('assets/images/gallery/img_3.png'))),
           GestureDetector(
-            onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>GalleryView())),
+            onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>const GalleryView())),
             child: Container(
               width: 62,
               height: 64,

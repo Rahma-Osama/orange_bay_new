@@ -10,7 +10,7 @@ class PayView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBarNew(),
-        body: PayBody(),
+        body: const PayBody(),
       ),
     );
   }

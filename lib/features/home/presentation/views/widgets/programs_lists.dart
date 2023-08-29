@@ -17,7 +17,7 @@ class _ProgramsState extends State<Programs>  with TickerProviderStateMixin{
   @override
   void initState() {
     animationController = AnimationController(
-        duration: Duration(milliseconds: 1000), vsync: this);
+        duration: const Duration(milliseconds: 1000), vsync: this);
     super.initState();
   }
 
@@ -35,7 +35,7 @@ class _ProgramsState extends State<Programs>  with TickerProviderStateMixin{
       child: SizedBox(
           height: MediaQuery.of(context).size.height * .5,
           child: ListView.builder(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
               scrollDirection:Axis.horizontal,
             itemCount: 10,
             itemBuilder: (context, index) {
@@ -55,8 +55,9 @@ class _ProgramsState extends State<Programs>  with TickerProviderStateMixin{
 // /////
 //                  );
               Navigator.push(context,
-                     PageTransition(child: ProgramLayout(),
-                         type: PageTransitionType.rightToLeftWithFade,duration: Duration(seconds: 1))),
+                     PageTransition(
+                         child: const ProgramLayout(),
+                         type: PageTransitionType.rightToLeftWithFade,duration: const Duration(seconds: 1))),
               child: ProgramContainer(
                 animation: animation,
                 animationController: animationController!,

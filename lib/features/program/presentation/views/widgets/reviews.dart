@@ -27,8 +27,8 @@ class _ReviewsState extends State<Reviews> {
                 child: Text("Be the first to review",style: Styles.TextStyle12.copyWith(color: GREY),),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 8),
-                padding: EdgeInsets.all(8),
+                margin: const EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.all(8),
                 color: Colors.white,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -38,11 +38,11 @@ class _ReviewsState extends State<Reviews> {
                   ],
                 ),),
               ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemCount: 3,itemBuilder: (context,index)=>Container(
-                padding: EdgeInsets.all(8),
-                margin:  EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.all(8),
+                margin:  const EdgeInsets.symmetric(vertical: 8),
                 color: Colors.white,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -55,7 +55,7 @@ class _ReviewsState extends State<Reviews> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.only(right: 8.0),
-                                child: CircleAvatar(backgroundImage: AssetImage('assets/images/img_5.png'),radius: MediaQuery.of(context).size.width/15,),
+                                child: CircleAvatar(backgroundImage: const AssetImage('assets/images/img_5.png'),radius: MediaQuery.of(context).size.width/15,),
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,

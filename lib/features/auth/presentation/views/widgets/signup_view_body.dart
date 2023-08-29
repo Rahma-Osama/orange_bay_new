@@ -20,7 +20,7 @@ Map< String , String > _authData = {
 };
 
 class _SignUpBodyState extends State<SignUpBody> {
-  AuthMode _authMode = AuthMode.Login;
+  final AuthMode _authMode = AuthMode.Login;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -51,7 +51,7 @@ class _SignUpBodyState extends State<SignUpBody> {
               return null;
             },
           ),
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           defaultText(
             enable: _authMode == AuthMode.Signup,
             isObscure: true,

@@ -35,21 +35,21 @@ class CustomButton extends StatelessWidget {
         height: height,
         child: ElevatedButton(
           onPressed: func,
+          style: ElevatedButton.styleFrom(
+//            elevation: 0,
+            backgroundColor: backgroundColor,
+            padding: const EdgeInsets.symmetric(horizontal: 30 , vertical: 8),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular( 8,),
+            ),
+            // minimumSize: Size(150, 50),
+          ),
           child: Text(
             text,
             style: Styles.TextStyle16.copyWith(
               color: textColor,
               height: 1,
             ),
-          ),
-          style: ElevatedButton.styleFrom(
-//            elevation: 0,
-            backgroundColor: backgroundColor,
-            padding: EdgeInsets.symmetric(horizontal: 30 , vertical: 8),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular( 8,),
-            ),
-            // minimumSize: Size(150, 50),
           ),
         ),
       ),

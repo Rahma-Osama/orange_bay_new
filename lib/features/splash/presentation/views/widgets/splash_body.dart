@@ -153,7 +153,7 @@ class _SplashBodyState extends State<SplashBody> {
     Future.delayed(const Duration(seconds: 6), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => OnBoarding()), // Replace with the appropriate screen
+        MaterialPageRoute(builder: (context) => const OnBoarding()), // Replace with the appropriate screen
       );
     });
   }
@@ -205,14 +205,16 @@ class _SplashBodyState extends State<SplashBody> {
                   AnimatedOpacity(
                     opacity: _showContent ? 1.0 : 0.0, // Animate opacity
                     duration: const Duration(milliseconds: 420),
-                    child: Text(
+                    child: const Text(
                         ("Planning your next journey with us "),
                         textAlign: TextAlign.left,
-                        style: TextStyle(fontSize: 16,color: Colors.white , fontWeight: FontWeight.w800,shadows: [
+                        style: TextStyle(fontSize: 16,color: Colors.white , fontWeight: FontWeight.w800,
+                            shadows: [
                           Shadow(color: Colors.grey,
-                            offset: Offset(.5,.5)
+                            offset: Offset(.1,.1)
                           )
-                        ])
+                        ],
+                        ),
                     ),
                   ),
                 ],

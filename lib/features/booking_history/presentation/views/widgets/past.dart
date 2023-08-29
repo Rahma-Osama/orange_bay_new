@@ -20,11 +20,11 @@ class PastBody extends StatelessWidget {
                   color: Colors.grey.withOpacity(0.5), // Set the shadow color
                   spreadRadius: 2, // Set the spread radius of the shadow
                   blurRadius: 6, // Set the blur radius of the shadow
-                  offset: Offset(0, 3), // Set the offset of the shadow
+                  offset: const Offset(0, 3), // Set the offset of the shadow
                 ),
               ],
             ),
-            child: ContainerBody(),
+            child: const ContainerBody(),
           ),
           Padding(
             padding: EdgeInsets.symmetric(
@@ -40,11 +40,11 @@ class PastBody extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5), // Set the shadow color
                     spreadRadius: 2, // Set the spread radius of the shadow
                     blurRadius: 6, // Set the blur radius of the shadow
-                    offset: Offset(0, 3), // Set the offset of the shadow
+                    offset: const Offset(0, 3), // Set the offset of the shadow
                   ),
                 ],
               ),
-              child: ContainerBody(),
+              child: const ContainerBody(),
             ),
           ),
         ],

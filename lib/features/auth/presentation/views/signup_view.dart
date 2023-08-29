@@ -21,7 +21,7 @@ class _SignUpViewState extends State<SignUpView> {
     return SafeArea(
       child: Scaffold(
         appBar: CustomAppBar(context: context) ,
-        body: SignUPMain(),
+        body: const SignUPMain(),
       ),
     );
   }

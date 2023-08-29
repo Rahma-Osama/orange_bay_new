@@ -56,7 +56,7 @@ class _AppBarNewState extends State<AppBarNew> {
               icon: const Icon(Icons.keyboard_arrow_down_outlined),
 
               // style: const TextStyle(color: Colors.deepPurple),
-              underline: SizedBox(),
+              underline: const SizedBox(),
               onChanged: (String? value) {
                 // This is called when the user selects an item.
                 setState(() {
@@ -75,7 +75,7 @@ class _AppBarNewState extends State<AppBarNew> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
             child: Container(
-              padding: EdgeInsets.symmetric(
+              padding: const EdgeInsets.symmetric(
                 // horizontal: MediaQuery.of(context).size.width / 60,
                 vertical: 0, // Adjust this value to align vertically as needed
               ),
@@ -89,10 +89,10 @@ class _AppBarNewState extends State<AppBarNew> {
                       Icons.language,
                       color: MAIN_ORANGE,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 4,
                     ),
-                    CustomDropdownButton()
+                    const CustomDropdownButton()
                   ],
                 ),
             ),
@@ -118,7 +118,7 @@ class _AppBarNewState extends State<AppBarNew> {
                       top: MediaQuery.of(context).size.height / 50,
                       right: MediaQuery.of(context).size.width / 200,
                       child: CircleAvatar(
-                        backgroundColor: Color(0XFFFF4747),
+                        backgroundColor: const Color(0XFFFF4747),
                         radius: MediaQuery.of(context).size.height / 200,
                       )),
                 ],

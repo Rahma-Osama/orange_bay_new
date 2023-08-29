@@ -6,9 +6,8 @@ class ServicesLayout extends StatelessWidget {
 
    @override
    Widget build(BuildContext context) {
-     return FadeAnimation(
-       1,
-       child: Padding(
+     //fadeanimation
+     return Padding(
          padding: const EdgeInsets.all(16.0),
          child: GridView.builder(
              itemCount: 4,
@@ -17,7 +16,7 @@ class ServicesLayout extends StatelessWidget {
                crossAxisSpacing: MediaQuery.of(context).size.height/40,
                childAspectRatio: .9,
            crossAxisCount: 2,), itemBuilder: (context,index)=>ServiceContainer(index: index,)),
-       ),
+
      );
    }
 

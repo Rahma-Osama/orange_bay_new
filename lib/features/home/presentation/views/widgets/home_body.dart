@@ -26,7 +26,7 @@ class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin
   late ScrollController controller;
   late AnimationController _animationController;
   void initState() {
-    _animationController = AnimationController(duration: Duration(milliseconds: 0), vsync: this);
+    _animationController = AnimationController(duration: const Duration(milliseconds: 0), vsync: this);
     widget.animationController.forward();
     controller = ScrollController(initialScrollOffset: 0.0);
     controller
@@ -79,11 +79,12 @@ class _HomeBodyState extends State<HomeBody> with SingleTickerProviderStateMixin
               //
               //   ],
               // ),
-              PickDate(),
-              Search(),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
-                child: Text("Our Programs",style: TextStyle(
+              const PickDate(),
+              const Search(),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16.0),
+                child: Text(
+                  "Our Programs",style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 20
                 ),),

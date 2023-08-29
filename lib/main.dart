@@ -17,9 +17,13 @@ class myApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return   MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  SplashScreen(),
+      // theme: ThemeData(
+      //   visualDensity: VisualDensity.adaptivePlatformDensity,
+      //   useMaterial3: true,
+      // ),
+      home:  const SplashScreen(),
     );
   }
 }

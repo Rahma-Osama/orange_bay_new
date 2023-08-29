@@ -9,7 +9,7 @@ class ConfirmView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarNew(),
-      body: ConfirmBody(),
+      body: const ConfirmBody(),
     );
   }
 }

@@ -41,10 +41,10 @@ class _SecondContainerState extends State<SecondContainer> {
               'When are you going?',
               style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400,),
             ),
-            SizedBox(height: 12,),
-            PickDate2(),
-            SizedBox(height: 12,),
-            PickTime(),
+            const SizedBox(height: 12,),
+            const PickDate2(),
+            const SizedBox(height: 12,),
+            const PickTime(),
             const SizedBox(height: 24),
             Text(
               'How many tickets?',
@@ -60,10 +60,10 @@ class _SecondContainerState extends State<SecondContainer> {
                 m2Expanded(context , 'count1'),
               ],
             ),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
             Text(
               '210.00 EGP',
-              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: Color(0xFF585757)),
+              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: const Color(0xFF585757)),
             ),
             const SizedBox(height: 15),
             Row(
@@ -75,16 +75,16 @@ class _SecondContainerState extends State<SecondContainer> {
                 m2Expanded(context , 'count2'),
               ],
             ),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
             Text(
               '53.00 EGP',
-              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: Color(0xFF585757)),
+              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: const Color(0xFF585757)),
             ),
             const SizedBox(height: 15),
             Row(
               children: [
-                Image(image: AssetImage('assets/images/info.png')),
-                SizedBox(width: 10 ,),
+                const Image(image: AssetImage('assets/images/info.png')),
+                const SizedBox(width: 10 ,),
                 Text(
                   'Children under 4 are free',
                   style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400),
@@ -94,8 +94,8 @@ class _SecondContainerState extends State<SecondContainer> {
          const SizedBox(height: 8),
             Row(
               children: [
-                Image(image: AssetImage('assets/images/info.png')),
-                SizedBox(width: 10 ,),
+                const Image(image: AssetImage('assets/images/info.png')),
+                const SizedBox(width: 10 ,),
                 Flexible(
                   child: Text(
                     'For a full refund, cancel at least 24 hours in advance of the start date of the experience.',
@@ -106,14 +106,14 @@ class _SecondContainerState extends State<SecondContainer> {
                 ),
               ],
             ),
-            SizedBox(height: 24,),
-            Divider(),
-            SizedBox(height: 8,),
+            const SizedBox(height: 24,),
+            const Divider(),
+            const SizedBox(height: 8,),
             Text(
               'Additional Services',
               style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w600),
             ),
-            SizedBox(height: 10,),
+            const SizedBox(height: 10,),
             Row(
               children: [
                 Text(
@@ -126,10 +126,10 @@ class _SecondContainerState extends State<SecondContainer> {
                 ),
               ],
             ),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
             Text(
               'Boat cruise with a snorkeling stop',
-              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: Color(0xFF585757)),
+              style: Styles.TextStyle14.copyWith(fontWeight: FontWeight.w400 , color: const Color(0xFF585757)),
             ),
           ],
         ),

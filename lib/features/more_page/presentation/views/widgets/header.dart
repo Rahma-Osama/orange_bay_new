@@ -53,7 +53,7 @@ class _HeaderTextState extends State<HeaderText> {
         profileText[0]
             ? const ProfileBody()
             : profileText[1]
-            ? SecurityBody()
+            ? const SecurityBody()
             : const SizedBox(),
         Padding(
           padding: const EdgeInsets.all(30),

@@ -15,7 +15,7 @@ class _MoreViewState extends State<MoreView> with TickerProviderStateMixin {
   @override
   void initState() {
     tabAnimationController =
-        AnimationController(duration: Duration(milliseconds: 400), vsync: this);
+        AnimationController(duration: const Duration(milliseconds: 400), vsync: this);
     tabAnimationController..forward();
     widget.animationController.forward();
 

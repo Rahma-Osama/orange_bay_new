@@ -11,8 +11,8 @@ class BookView extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.grey[100],
-        appBar: AppBarButtom3(text: 'Booking Details',),
-        body: BookBody(),
+        appBar: const AppBarButtom3(text: 'Booking Details',),
+        body: const BookBody(),
       ),
     );
   }

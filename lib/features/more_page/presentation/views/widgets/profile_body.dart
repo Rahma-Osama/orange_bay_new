@@ -21,8 +21,8 @@ class ProfileBody extends StatefulWidget {
 class _ProfileBodyState extends State<ProfileBody> {
   @override
   Widget build(BuildContext context) {
-    return  Padding(
-      padding: const EdgeInsets.all(10.0),
+    return  const Padding(
+      padding: EdgeInsets.all(10.0),
       child: SingleChildScrollView(
         child: Column(
           children: [

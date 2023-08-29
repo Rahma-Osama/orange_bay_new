@@ -26,24 +26,24 @@ class _BottomNavBarState extends State<BottomNavBar> {
           onTap: (i) => BlocProvider.of<LayoutCubit>(context).changeIndex(i),
           items: [
             SalomonBottomBarItem(
-              icon: Icon(Icons.home),
-              title: Text("Home"),
+              icon: const Icon(Icons.home),
+              title: const Text("Home"),
               selectedColor: MAIN_ORANGE,
             ),
 
             SalomonBottomBarItem(
-              icon: Icon(Icons.calendar_today_rounded),
-              title: Text("Booking History"),
+              icon: const Icon(Icons.calendar_today_rounded),
+              title: const Text("Booking History"),
               selectedColor: MAIN_ORANGE,        ),
 
             SalomonBottomBarItem(
-              icon: Icon(Icons.fact_check_outlined),
-              title: Text("Services"),
+              icon: const Icon(Icons.fact_check_outlined),
+              title: const Text("Services"),
               selectedColor: MAIN_ORANGE,        ),
 
             SalomonBottomBarItem(
-              icon: Icon(Icons.more_horiz),
-              title: Text("More"),
+              icon: const Icon(Icons.more_horiz),
+              title: const Text("More"),
               selectedColor: MAIN_ORANGE,
             ),
           ],

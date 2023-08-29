@@ -30,10 +30,10 @@ CustomAppBar({context}) {
                   Icons.language,
                   color: MAIN_ORANGE,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 4,
                 ),
-                CustomDropdownButton()
+                const CustomDropdownButton()
               ],
             )),
       ),
@@ -58,7 +58,7 @@ CustomAppBar({context}) {
                   top: MediaQuery.of(context).size.height / 50,
                   right: MediaQuery.of(context).size.width / 200,
                   child: CircleAvatar(
-                    backgroundColor: Color(0XFFFF4747),
+                    backgroundColor: const Color(0XFFFF4747),
                     radius: MediaQuery.of(context).size.height / 200,
                   )),
             ],

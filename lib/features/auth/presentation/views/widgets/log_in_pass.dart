@@ -8,7 +8,7 @@ class LogInPass extends StatelessWidget {
 
    LogInPass({Key? key}) : super(key: key);
 
-  Map< String , String > _authData = {
+  final Map< String , String > _authData = {
     'email' : '',
     'password' : '',
   };

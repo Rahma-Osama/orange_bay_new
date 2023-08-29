@@ -34,11 +34,11 @@ class _AuthCardSignState extends State<AuthCardSign> with SingleTickerProviderSt
   @override
   void initState(){
     super.initState();
-    _controller = AnimationController(vsync: this , duration: Duration(milliseconds: 300,),
+    _controller = AnimationController(vsync: this , duration: const Duration(milliseconds: 300,),
     );
     _slideAnimation = Tween<Offset>(
-      begin: Offset(0, -0.15),
-      end: Offset(0, 0),
+      begin: const Offset(0, -0.15),
+      end: const Offset(0, 0),
     ).animate(
         CurvedAnimation(
           parent: _controller,
@@ -68,7 +68,7 @@ class _AuthCardSignState extends State<AuthCardSign> with SingleTickerProviderSt
     try{
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => HomeLayout()), // Replace NewPage with the desired destination page
+        MaterialPageRoute(builder: (context) => const HomeLayout()), // Replace NewPage with the desired destination page
       );
     } catch(error){
 
@@ -100,7 +100,7 @@ class _AuthCardSignState extends State<AuthCardSign> with SingleTickerProviderSt
       ),
       elevation: 8.0,
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeIn,
         height: 500,
         // height: _authMode == AuthMode.Signup ? 400 : 260,
@@ -108,7 +108,7 @@ class _AuthCardSignState extends State<AuthCardSign> with SingleTickerProviderSt
         //   maxHeight: _authMode == AuthMode.Signup ? 400 : 260
         width: deviceSize.width*.85,
         // padding: EdgeInsets.all(30),
-        child: SignupScreen(),
+        child: const SignupScreen(),
         // child: Form(
         //   key: _formKey,
         //   child: SingleChildScrollView(

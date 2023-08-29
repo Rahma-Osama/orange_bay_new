@@ -11,7 +11,7 @@ class LogInEmail extends StatefulWidget {
 }
 var emailController = TextEditingController();
 class _LogInEmailState extends State<LogInEmail> {
-  Map< String , String > _authData = {
+  final Map< String , String > _authData = {
     'email' : '',
     'password' : '',
   };

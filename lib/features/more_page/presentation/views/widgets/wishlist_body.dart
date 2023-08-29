@@ -41,7 +41,7 @@ class _WishListBodyState extends State<WishListBody> with TickerProviderStateMix
                 ),
                 Padding(
                   padding: EdgeInsets.all(MediaQuery.of(context).size.width / 20),
-                  child: Align(
+                  child: const Align(
                       alignment: Alignment.topRight,
                       child: CircleAvatar(
                           backgroundColor: Colors.white,

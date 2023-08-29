@@ -16,7 +16,7 @@ class _SignUPMainState extends State<SignUPMain> {
   Widget build(BuildContext context) {
     final deviceSize = MediaQuery.of(context).size;
     return Container(
-      decoration:  BoxDecoration(
+      decoration:  const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(AssetData.kBackGround),
           fit: BoxFit.fitWidth,
@@ -32,7 +32,7 @@ class _SignUPMainState extends State<SignUPMain> {
             children: [
               Flexible(
                 flex: deviceSize.width > 600 ? 2 : 1,
-                child: AuthCardSign(),
+                child: const AuthCardSign(),
               ),
             ],
           ),

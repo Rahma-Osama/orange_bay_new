@@ -19,7 +19,7 @@ class _GalleryBodyState extends State<GalleryBody> {
         children: [
           Container(
             height: 60,
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             child: ListView.builder(
                 physics: const BouncingScrollPhysics(),
                 itemCount: 3,

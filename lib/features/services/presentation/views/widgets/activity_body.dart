@@ -15,7 +15,7 @@ class _ActivityBodyState extends State<ActivityBody> {
     return  Padding(
       padding: const EdgeInsets.all(8.0),
       child: GridView.builder(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           itemCount: 6,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             mainAxisSpacing: MediaQuery.of(context).size.height/40,

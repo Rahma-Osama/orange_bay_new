@@ -14,7 +14,7 @@ class UserView extends StatelessWidget {
       child: Scaffold(
         // backgroundColor: Colors.grey[100],
         appBar: AppBarNew() ,
-        body: UserBody(),
+        body: const UserBody(),
       ),
     );
   }

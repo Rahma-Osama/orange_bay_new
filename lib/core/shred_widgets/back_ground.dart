@@ -7,7 +7,7 @@ class BackGround extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.only(bottomRight: Radius.circular(40), bottomLeft: Radius.circular(40)),
+      borderRadius: const BorderRadius.only(bottomRight: Radius.circular(40), bottomLeft: Radius.circular(40)),
       child: FadeInImage(
         height: MediaQuery.of(context).size.height/3,
         width: double.infinity,

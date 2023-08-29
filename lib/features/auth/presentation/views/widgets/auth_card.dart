@@ -37,11 +37,11 @@ class _AuthCardState extends State<AuthCard> with SingleTickerProviderStateMixin
  @override
   void initState(){
    super.initState();
-   _controller = AnimationController(vsync: this , duration: Duration(milliseconds: 300,),
+   _controller = AnimationController(vsync: this , duration: const Duration(milliseconds: 300,),
    );
     _slideAnimation = Tween<Offset>(
-      begin: Offset(0, -0.15),
-      end: Offset(0, 0),
+      begin: const Offset(0, -0.15),
+      end: const Offset(0, 0),
     ).animate(
         CurvedAnimation(
             parent: _controller,
@@ -71,7 +71,7 @@ class _AuthCardState extends State<AuthCard> with SingleTickerProviderStateMixin
    try{
      Navigator.push(
        context,
-       MaterialPageRoute(builder: (context) => BookView()), // Replace NewPage with the desired destination page
+       MaterialPageRoute(builder: (context) => const BookView()), // Replace NewPage with the desired destination page
      );
    } catch(error){
 
@@ -103,7 +103,7 @@ class _AuthCardState extends State<AuthCard> with SingleTickerProviderStateMixin
       ),
       elevation: 8.0,
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeIn,
         height: 500,
         // height: _authMode == AuthMode.Signup ? 400 : 260,
@@ -111,7 +111,7 @@ class _AuthCardState extends State<AuthCard> with SingleTickerProviderStateMixin
         //   maxHeight: _authMode == AuthMode.Signup ? 400 : 260
         width: deviceSize.width*.85,
         // padding: EdgeInsets.all(30),
-        child: LoginScreen(),
+        child: const LoginScreen(),
 
         // child: Form(
         //   key: _formKey,
